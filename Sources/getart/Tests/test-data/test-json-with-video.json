@@ -1,0 +1,3022 @@
+[{
+	"intent": {
+		"storefront": "us",
+		"language": null,
+		"$kind": "SearchLandingPageIntent",
+		"inLibrary": false
+	},
+	"data": {
+		"pageMetrics": {
+			"instructions": [{
+				"data": {
+					"topic": "xp_its_music_main",
+					"shouldFlush": false,
+					"fields": {
+						"eventType": "page"
+					},
+					"includingFields": ["pageFields", "languages"],
+					"excludingFields": []
+				},
+				"invocationPoints": ["pageEnter"]
+			}],
+			"pageFields": {
+				"recoID": "d194de0d-bf68-4ce1-a432-96fefa1b5d82",
+				"pageUrl": "https://amp-api.music.apple.com/v1/recommendations/us/15-4ykyNWnrmJaKvHK7vnP7Cg?l=en-US&name=search-landing&art%5Burl%5D=f&format%5Bresources%5D=map&l=en-US&platform=web",
+				"pageType": "Search",
+				"pageFeatureName": "search",
+				"pageId": "SearchLanding",
+				"page": "Search_SearchLanding"
+			},
+			"custom": {}
+		},
+		"sections": [{
+			"id": "top-search-section",
+			"itemKind": "topSearchLockup",
+			"presentation": {
+				"kind": "collection",
+				"layout": "grid"
+			},
+			"items": [],
+			"header": {
+				"kind": "default",
+				"item": {
+					"titleLink": {
+						"title": "Recently Searched"
+					},
+					"accessoryButtons": [{
+						"kind": "default",
+						"item": {
+							"id": "clearButton",
+							"text": "Clear",
+							"segue": {
+								"$kind": "compoundAction",
+								"subactions": [{
+									"$kind": "removeRecentLibrarySearchesAction",
+									"actionMetrics": {
+										"data": [],
+										"custom": {}
+									}
+								}, {
+									"$kind": "setPersistenceItemAction",
+									"scope": "user",
+									"item": [],
+									"actionMetrics": {
+										"data": [],
+										"custom": {}
+									},
+									"key": "RecentlySearchedItems"
+								}, {
+									"actionMetrics": {
+										"data": [],
+										"custom": {}
+									},
+									"scope": "global",
+									"kind": "recentCatalogSearchesChanged",
+									"$kind": "invalidationAction"
+								}],
+								"actionMetrics": {
+									"data": [{
+										"fields": {
+											"actionType": "delete",
+											"eventType": "click",
+											"targetType": "button",
+											"targetId": "clear",
+											"eventVersion": 5
+										},
+										"includingFields": ["pageFields", "languages"],
+										"excludingFields": [],
+										"topic": "xp_its_music_main",
+										"shouldFlush": false
+									}],
+									"custom": {}
+								}
+							}
+						}
+					}]
+				}
+			},
+			"invalidationRules": {
+				"eventTriggers": [{
+					"events": [{
+						"name": "recentLibrarySearchesDidChange"
+					}, {
+						"name": "invalidationAction",
+						"kind": "recentCatalogSearchesChanged",
+						"scope": "global"
+					}],
+					"intent": {
+						"$kind": "RefreshRecentSearchesIntent"
+					}
+				}]
+			},
+			"displaySeparator": false
+		}, {
+			"id": "browse-category-bricks",
+			"itemKind": "brickLockup",
+			"presentation": {
+				"kind": "collection",
+				"layout": "grid"
+			},
+			"items": [{
+				"id": "brick-lockup - 1564180390",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/ea/87/f4/ea87f495-b575-4259-7807-e8ba342254ee/ef10582c-b1a8-4dfe-a1b3-abca020f8624.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "f1c1c4",
+						"textColor2": "f9e5e6",
+						"textColor4": "efb7ba",
+						"textColor1": "fcf2f2",
+						"bgColor": "c8000a",
+						"hasP3": false
+					}
+				},
+				"title": "Spatial Audio",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1564180390"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-spatial-audio/1564180390"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1564180390"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-spatial-audio/1564180390"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-spatial-audio/1564180390",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1564180390",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Spatial Audio"
+			}, {
+				"id": "brick-lockup - 1649426593",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/c8/7a/de/c87adeb0-9ec8-df3e-b49b-c6ce75e8a772/e05c0958-2390-461e-91b0-f143e7a9c569.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "c48f85",
+						"textColor2": "d2967f",
+						"textColor4": "b77d6c",
+						"textColor1": "e2ac9e",
+						"bgColor": "4d1c20",
+						"hasP3": false
+					}
+				},
+				"title": "Apple Music Live",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1649426593"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-live/1649426593"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1649426593"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-live/1649426593"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-live/1649426593",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1649426593",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Live"
+			}, {
+				"id": "brick-lockup - 976439539",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/bc/93/a8/bc93a8ef-5122-9602-bddd-5cdaf290b8d8/3ef373fc-04f1-443b-bd06-f06b2bea925b.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "19223c",
+						"textColor2": "11182a",
+						"textColor4": "212d50",
+						"textColor1": "070a12",
+						"bgColor": "6083e7",
+						"hasP3": false
+					}
+				},
+				"title": "Hip-Hop",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439539"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-hip-hop/976439539"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439539"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-hip-hop/976439539"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-hip-hop/976439539",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439539",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Hip-Hop"
+			}, {
+				"id": "brick-lockup - 976439534",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/5c/a2/a9/5ca2a920-4000-5c21-9a98-352d0c0eaebc/46ceccbb-3ce7-448c-8964-7a1c1a639590.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "2d1c08",
+						"textColor2": "110b03",
+						"textColor4": "37220a",
+						"textColor1": "050301",
+						"bgColor": "cd8028",
+						"hasP3": false
+					}
+				},
+				"title": "Country",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439534"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-country/976439534"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439534"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-country/976439534"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-country/976439534",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439534",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Country"
+			}, {
+				"id": "brick-lockup - 976439548",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/b0/90/36/b09036dc-db75-c406-3e0c-407746ffbe83/dddfbf31-64c3-47f5-bfda-dc9d58d47d95.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "33141d",
+						"textColor2": "0b0406",
+						"textColor4": "36151e",
+						"textColor1": "070304",
+						"bgColor": "e25a80",
+						"hasP3": false
+					}
+				},
+				"title": "Pop",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439548"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-pop/976439548"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439548"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-pop/976439548"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-pop/976439548",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439548",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Pop"
+			}, {
+				"id": "brick-lockup - 1558257257",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/60/d2/03/60d20383-f8e5-3c01-523f-9d8c635d6aad/eab64fdc-7bb7-4497-a17b-938289dcee68.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "d2c8da",
+						"textColor2": "ece8ef",
+						"textColor4": "cbbed4",
+						"textColor1": "f5f3f7",
+						"bgColor": "471969",
+						"hasP3": false
+					}
+				},
+				"title": "Sleep",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558257257"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-sleep/1558257257"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558257257"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-sleep/1558257257"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-sleep/1558257257",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558257257",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Sleep"
+			}, {
+				"id": "brick-lockup - 1514706977",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/59/4c/c8/594cc809-229d-a080-d374-8a05d1a1a019/8250790e-314f-4ecd-8d13-7183c5e60fa1.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "d0c910",
+						"textColor2": "ebe512",
+						"textColor4": "cec90f",
+						"textColor1": "ede513",
+						"bgColor": "5a5707",
+						"hasP3": false
+					}
+				},
+				"title": "Charts",
+				"contentDescriptor": {
+					"kind": "editorialItem",
+					"identifiers": {
+						"storeAdamID": "1514706977"
+					},
+					"url": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogPage",
+						"intent": {
+							"storefront": "us",
+							"language": null,
+							"$kind": "TopChartPageIntent"
+						}
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?genreId=34",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "link",
+								"targetId": "1514706977",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				}
+			}, {
+				"id": "brick-lockup - 1558256251",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/32/1f/19/321f1923-4460-ace5-c97f-415287342a20/f2309b0a-341f-4fac-a0f5-95be2d476614.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "1fcbcd",
+						"textColor2": "21d5eb",
+						"textColor4": "1bbccf",
+						"textColor1": "26e8e8",
+						"bgColor": "045860",
+						"hasP3": false
+					}
+				},
+				"title": "Chill",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558256251"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-chill/1558256251"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558256251"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-chill/1558256251"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-chill/1558256251",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558256251",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Chill"
+			}, {
+				"id": "brick-lockup - 976439551",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/54/55/24/54552465-5d5b-0714-abd4-163abdadf14d/74570a3c-7178-45c7-82d1-451def66b8a6.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "1c162d",
+						"textColor2": "040306",
+						"textColor4": "1e1830",
+						"textColor1": "010102",
+						"bgColor": "876cd7",
+						"hasP3": false
+					}
+				},
+				"title": "R&B",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439551"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-r-b/976439551"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439551"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-r-b/976439551"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-r-b/976439551",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439551",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music R&B"
+			}, {
+				"id": "brick-lockup - 1531542847",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/87/f7/0c/87f70c06-8e5c-1702-cd2e-b7710539fdd3/4f6c58f3-76da-4fe2-8ddf-71c8d0312785.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "320e1c",
+						"textColor2": "0b0306",
+						"textColor4": "340e1d",
+						"textColor1": "090205",
+						"bgColor": "da3b79",
+						"hasP3": false
+					}
+				},
+				"title": "Latin",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1531542847"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-latin/1531542847"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1531542847"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-latin/1531542847"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-latin/1531542847",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1531542847",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Latin"
+			}, {
+				"id": "brick-lockup - 976439535",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/ec/d8/b3/ecd8b3a0-4212-b0be-cb49-e7aed875ce73/e6b308d7-a2e0-4dcb-89b2-f146cd028793.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "0b2c1c",
+						"textColor2": "05150d",
+						"textColor4": "0d3522",
+						"textColor1": "020a06",
+						"bgColor": "2db674",
+						"hasP3": false
+					}
+				},
+				"title": "Dance",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439535"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-dance/976439535"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439535"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-dance/976439535"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-dance/976439535",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439535",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Dance"
+			}, {
+				"id": "brick-lockup - 1441811365",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/c5/99/6d/c5996db3-87fa-2009-0ecd-75f9aa528290/62f8788a-52f1-4673-b6b6-eb8d15107ecd.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "f1c4c9",
+						"textColor2": "f9e6e8",
+						"textColor4": "efbac0",
+						"textColor1": "fcf2f3",
+						"bgColor": "c80a1f",
+						"hasP3": false
+					}
+				},
+				"title": "DJ Mixes",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1441811365"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-dj-mixes/1441811365"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1441811365"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-dj-mixes/1441811365"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-dj-mixes/1441811365",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1441811365",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music DJ Mixes"
+			}, {
+				"id": "brick-lockup - 1526756058",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/d7/3d/99/d73d9983-da0d-f5a5-2c94-905fb6514642/7fe944e7-94c2-4a8f-8a0d-46b7116c0ec4.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "443704",
+						"textColor2": "282102",
+						"textColor4": "4c3e04",
+						"textColor1": "1e1801",
+						"bgColor": "dab10d",
+						"hasP3": false
+					}
+				},
+				"title": "Hits",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1526756058"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-hits/1526756058"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1526756058"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-hits/1526756058"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-hits/1526756058",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1526756058",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Hits"
+			}, {
+				"id": "brick-lockup - 1558256909",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/87/ff/18/87ff1877-2fe9-4b36-8550-add4d8113265/6377d16a-93ac-4ec0-acb4-c10e9bd35628.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "afcd00",
+						"textColor2": "c6ea00",
+						"textColor4": "accc00",
+						"textColor1": "c9ec00",
+						"bgColor": "455200",
+						"hasP3": false
+					}
+				},
+				"title": "Fitness",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558256909"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-fitness/1558256909"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558256909"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-fitness/1558256909"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-fitness/1558256909",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558256909",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Fitness"
+			}, {
+				"id": "brick-lockup - 1558256919",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/bf/89/8b/bf898bad-a843-f14c-e68c-a59d4286c811/2a2fd0ed-2fdd-450e-a36d-60b1498042cf.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "d66021",
+						"textColor2": "f46e25",
+						"textColor4": "d66021",
+						"textColor1": "f46e25",
+						"bgColor": "5d2a0f",
+						"hasP3": false
+					}
+				},
+				"title": "Feel Good",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558256919"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-feel-good/1558256919"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558256919"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-feel-good/1558256919"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-feel-good/1558256919",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558256919",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Feel Good"
+			}, {
+				"id": "brick-lockup - 1558257035",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/29/74/5c/29745c40-d68f-b348-8874-b6bc9629e073/64fc90a1-8bfc-42ee-bde9-667e2c5df9e9.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "eac9da",
+						"textColor2": "f6e8ef",
+						"textColor4": "e6c1d4",
+						"textColor1": "faf3f7",
+						"bgColor": "a82166",
+						"hasP3": false
+					}
+				},
+				"title": "Party",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558257035"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-party/1558257035"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558257035"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-party/1558257035"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-party/1558257035",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558257035",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Party"
+			}, {
+				"id": "brick-lockup - 976439526",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/e1/ca/a4/e1caa400-ec1f-b860-b5dd-c213bf41d6b3/2345344e-a82e-458a-8a8b-99bdaa4f3d80.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "353303",
+						"textColor2": "282702",
+						"textColor4": "474304",
+						"textColor1": "131201",
+						"bgColor": "c0b70d",
+						"hasP3": false
+					}
+				},
+				"title": "Alternative",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439526"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-alternative/976439526"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439526"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-alternative/976439526"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-alternative/976439526",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439526",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Alternative"
+			}, {
+				"id": "brick-lockup - 976439554",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/5a/db/f0/5adbf01c-25c4-71d8-b795-e7412fac576b/21171494-78bc-43be-a4fb-90782c18059f.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "ebd1c9",
+						"textColor2": "f6ebe8",
+						"textColor4": "e8c9c1",
+						"textColor1": "faf5f3",
+						"bgColor": "ae3f21",
+						"hasP3": false
+					}
+				},
+				"title": "Rock",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439554"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-rock/976439554"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439554"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-rock/976439554"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-rock/976439554",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439554",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Rock"
+			}, {
+				"id": "brick-lockup - 976439531",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/03/53/b9/0353b95e-089e-63d9-5f1a-e07dbe85ae14/62e5b81d-fef3-46d0-b33b-537d1e85f24f.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "3a180f",
+						"textColor2": "1b0b07",
+						"textColor4": "411b11",
+						"textColor1": "120704",
+						"bgColor": "da5c39",
+						"hasP3": false
+					}
+				},
+				"title": "Classic Rock",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439531"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-classic-rock/976439531"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439531"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-classic-rock/976439531"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-classic-rock/976439531",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439531",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Classic Rock"
+			}, {
+				"id": "brick-lockup - 1558257095",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/14/75/5d/14755dc2-e8d1-75fd-e5ab-b5cce365370c/c257e39a-f592-48d5-8781-0e3eab9e7d29.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "dfd4c3",
+						"textColor2": "f1ede6",
+						"textColor4": "dacdba",
+						"textColor1": "f8f6f2",
+						"bgColor": "7d4d08",
+						"hasP3": false
+					}
+				},
+				"title": "Focus",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558257095"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-focus/1558257095"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558257095"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-focus/1558257095"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-focus/1558257095",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558257095",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Focus"
+			}, {
+				"id": "brick-lockup - 1558256771",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/a1/be/31/a1be3188-2835-4ab7-1747-6309faa9080e/a18d6291-7173-42ae-9c64-02ac0afaf47b.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "cd29bf",
+						"textColor2": "f330e2",
+						"textColor4": "cd29bf",
+						"textColor1": "f330e2",
+						"bgColor": "370b33",
+						"hasP3": false
+					}
+				},
+				"title": "Essentials",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558256771"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-essentials/1558256771"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558256771"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-essentials/1558256771"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-essentials/1558256771",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558256771",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Essentials"
+			}, {
+				"id": "brick-lockup - 1482068485",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/9b/db/02/9bdb025a-1b18-5e2e-7186-cd5e3b79b093/92a1ce92-93a3-45d5-8233-7b756406dd17.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "062627",
+						"textColor2": "031516",
+						"textColor4": "083133",
+						"textColor1": "010707",
+						"bgColor": "1ba4a9",
+						"hasP3": false
+					}
+				},
+				"title": "Christian",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1482068485"
+					},
+					"url": "https://music.apple.com/us/curator/apple-christian/1482068485"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1482068485"
+							},
+							"url": "https://music.apple.com/us/curator/apple-christian/1482068485"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-christian/1482068485",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1482068485",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Christian"
+			}, {
+				"id": "brick-lockup - 976439532",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/e2/28/4f/e2284f11-e4a5-ce12-3281-6cfa993928e5/329b7acb-044a-414a-8227-78750bdfb511.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "d9cedf",
+						"textColor2": "efeaf1",
+						"textColor4": "d3c6da",
+						"textColor1": "f7f4f8",
+						"bgColor": "63377b",
+						"hasP3": false
+					}
+				},
+				"title": "Classical",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439532"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-classical/976439532"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439532"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-classical/976439532"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-classical/976439532",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439532",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Classical"
+			}, {
+				"id": "brick-lockup - 976439544",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/4b/6c/65/4b6c65be-0ed1-9aa1-8f70-dde245bca37d/b2096af2-f84a-4852-90f7-96226d2daa32.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "2a1c03",
+						"textColor2": "170f01",
+						"textColor4": "392604",
+						"textColor1": "050300",
+						"bgColor": "bf8010",
+						"hasP3": false
+					}
+				},
+				"title": "Música Mexicana",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439544"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-m%C3%BAsica-mexicana/976439544"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439544"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-m%C3%BAsica-mexicana/976439544"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-m%C3%BAsica-mexicana/976439544",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439544",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Música Mexicana"
+			}, {
+				"id": "brick-lockup - 979231690",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/0f/1f/cd/0f1fcd6d-a660-259f-d2c4-319761070011/861cb0eb-168a-46cd-8585-c2e3f316f55b.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "31140d",
+						"textColor2": "110704",
+						"textColor4": "3a180f",
+						"textColor1": "070201",
+						"bgColor": "da5c39",
+						"hasP3": false
+					}
+				},
+				"title": "Hard Rock",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "979231690"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-hard-rock/979231690"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "979231690"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-hard-rock/979231690"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-hard-rock/979231690",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "979231690",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Hard Rock"
+			}, {
+				"id": "brick-lockup - 976439553",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/cf/7b/06/cf7b063c-f05f-cbab-b191-a2712394a746/a1c6472b-03ef-41fc-bdb9-15b52559e28d.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "320d1b",
+						"textColor2": "0a0205",
+						"textColor4": "330e1c",
+						"textColor1": "080204",
+						"bgColor": "da3b79",
+						"hasP3": false
+					}
+				},
+				"title": "Urbano Latino",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439553"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-urbano-latino/976439553"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439553"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-urbano-latino/976439553"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-urbano-latino/976439553",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439553",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Urbano Latino"
+			}, {
+				"id": "brick-lockup - 988658197",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/f5/31/51/f53151d0-b6f1-ab14-7c9d-73bfc034d90d/d0fd5401-5bda-4bee-afca-2c622e9a58e9.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "31131c",
+						"textColor2": "080304",
+						"textColor4": "34141d",
+						"textColor1": "050203",
+						"bgColor": "e25a80",
+						"hasP3": false
+					}
+				},
+				"title": "K-Pop",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "988658197"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-k-pop/988658197"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "988658197"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-k-pop/988658197"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-k-pop/988658197",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "988658197",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music K-Pop"
+			}, {
+				"id": "brick-lockup - 976439538",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/45/cc/8d/45cc8d73-8d9f-20a7-a57f-4c854a9271c3/0e608b12-53ef-42ca-ae53-97c541c3b894.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "112811",
+						"textColor2": "091709",
+						"textColor4": "163516",
+						"textColor1": "030703",
+						"bgColor": "4aaf49",
+						"hasP3": false
+					}
+				},
+				"title": "Kids",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439538"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-kids/976439538"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439538"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-kids/976439538"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-kids/976439538",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439538",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Kids"
+			}, {
+				"id": "brick-lockup - 1555173397",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/ac/1b/f8/ac1bf8a7-c4fb-a1b0-90aa-3c9a7afd5f28/aadcdfed-207b-4961-9884-a37a64eb9bcd.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "102710",
+						"textColor2": "030903",
+						"textColor4": "122a11",
+						"textColor1": "020502",
+						"bgColor": "4aaf49",
+						"hasP3": false
+					}
+				},
+				"title": "Family",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1555173397"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-family/1555173397"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1555173397"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-family/1555173397"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-family/1555173397",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1555173397",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Family"
+			}, {
+				"id": "brick-lockup - 1514826994",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/c9/ae/47/c9ae4709-c461-f729-23ef-2c68ad37341e/e5bf281e-54e4-46dc-b9a2-ca961cc99f81.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "c9cbd7",
+						"textColor2": "e8e9ee",
+						"textColor4": "c0c2d1",
+						"textColor1": "f3f4f6",
+						"bgColor": "21265c",
+						"hasP3": false
+					}
+				},
+				"title": "Music Videos",
+				"contentDescriptor": {
+					"kind": "editorialItem",
+					"identifiers": {
+						"storeAdamID": "1514826994"
+					},
+					"url": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=34"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogPage",
+						"intent": {
+							"id": "34",
+							"storefront": "us",
+							"language": null,
+							"$kind": "GroupingPageIntent"
+						}
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionUrl": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewGrouping?cc=us&id=34",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "link",
+								"targetId": "1514826994",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				}
+			}, {
+				"id": "brick-lockup - 1532467784",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/6a/58/98/6a589845-c3d6-0d57-32a0-34a2a2be28d2/3412a2dc-9960-4a14-b040-13490c17ae5a.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "380b10",
+						"textColor2": "0a0203",
+						"textColor4": "3a0b10",
+						"textColor1": "080102",
+						"bgColor": "f83046",
+						"hasP3": false
+					}
+				},
+				"title": "Up Next",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1532467784"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-up-next/1532467784"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1532467784"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-up-next/1532467784"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-up-next/1532467784",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1532467784",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Up Next"
+			}, {
+				"id": "brick-lockup - 1554938339",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/c5/52/28/c5522883-eb13-7156-4af7-e21bdab35a9b/816d9487-9770-4e7a-9772-f60ccbd933a6.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "ddd7c1",
+						"textColor2": "f1eee5",
+						"textColor4": "d8d1b7",
+						"textColor1": "f8f6f2",
+						"bgColor": "755a00",
+						"hasP3": false
+					}
+				},
+				"title": "Decades",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1554938339"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-decades/1554938339"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1554938339"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-decades/1554938339"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-decades/1554938339",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1554938339",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Decades"
+			}, {
+				"id": "brick-lockup - 976439549",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features/v4/75/6e/5e/756e5e72-22bc-57de-7f2b-c6d042417879/00eb9147-24ac-4223-842e-519e19f36f7f.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "31131c",
+						"textColor2": "080304",
+						"textColor4": "33141d",
+						"textColor1": "050203",
+						"bgColor": "e25a80",
+						"hasP3": false
+					}
+				},
+				"title": "Pop Latino",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439549"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-pop-latino/976439549"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439549"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-pop-latino/976439549"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-pop-latino/976439549",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439549",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Pop Latino"
+			}, {
+				"id": "brick-lockup - 976439543",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/b5/c6/d2/b5c6d2ad-0e69-1d37-d7a0-3699d4f4909b/2b419129-d471-44fd-bbfa-2d36d07a6787.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "ebcccb",
+						"textColor2": "f6e9e9",
+						"textColor4": "e8c3c3",
+						"textColor1": "faf4f4",
+						"bgColor": "ae2b29",
+						"hasP3": false
+					}
+				},
+				"title": "Metal",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439543"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-metal/976439543"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439543"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-metal/976439543"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-metal/976439543",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439543",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Metal"
+			}, {
+				"id": "brick-lockup - 1526866635",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/e9/73/69/e97369b3-c68c-1047-6086-08ae0c747469/9d4f61ac-4d2f-4546-98b3-4db3b1ccb01b.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "362c03",
+						"textColor2": "171301",
+						"textColor4": "3e3203",
+						"textColor1": "0d0b00",
+						"bgColor": "dab10d",
+						"hasP3": false
+					}
+				},
+				"title": "2000s",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1526866635"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-2000s/1526866635"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1526866635"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-2000s/1526866635"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-2000s/1526866635",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1526866635",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music 2000s"
+			}, {
+				"id": "brick-lockup - 976439541",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/f7/40/58/f7405855-3089-d5ca-daf4-dfad76d0e840/b2702464-4ec7-4e25-b468-7734a8d5b20d.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "0b362c",
+						"textColor2": "07211b",
+						"textColor4": "0d3e33",
+						"textColor1": "041713",
+						"bgColor": "25b192",
+						"hasP3": false
+					}
+				},
+				"title": "Indie",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439541"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-indie/976439541"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439541"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-indie/976439541"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-indie/976439541",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439541",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Indie"
+			}, {
+				"id": "brick-lockup - 976439536",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/df/dd/1c/dfdd1cc0-a862-e2f8-4778-21ddd0fa0d11/04253fa4-f2f1-4f9c-914a-9c2f7e7fcc50.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "0a2a1b",
+						"textColor2": "04130c",
+						"textColor4": "0c3320",
+						"textColor1": "010704",
+						"bgColor": "2db674",
+						"hasP3": false
+					}
+				},
+				"title": "Electronic",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439536"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-electronic/976439536"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439536"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-electronic/976439536"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-electronic/976439536",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439536",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Electronic"
+			}, {
+				"id": "brick-lockup - 1554941247",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/52/7b/80/527b806b-497a-7e6f-a9c1-4f641318fe5e/cf8ee9d1-ba6a-4f30-954b-5c3610993491.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "4ecb33",
+						"textColor2": "5bf03b",
+						"textColor4": "4dca32",
+						"textColor1": "5cf23c",
+						"bgColor": "12330c",
+						"hasP3": false
+					}
+				},
+				"title": "Behind the Songs",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1554941247"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-behind-the-songs/1554941247"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1554941247"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-behind-the-songs/1554941247"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-behind-the-songs/1554941247",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1554941247",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Behind the Songs"
+			}, {
+				"id": "brick-lockup - 976439542",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/80/ca/30/80ca30df-e188-f6b2-65e4-e6ef55dda456/7f729762-cc80-43a0-bccb-c1a53491c85f.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "09242c",
+						"textColor2": "02090c",
+						"textColor4": "0a2831",
+						"textColor1": "010405",
+						"bgColor": "29a5c9",
+						"hasP3": false
+					}
+				},
+				"title": "Jazz",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439542"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-jazz/976439542"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439542"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-jazz/976439542"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-jazz/976439542",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439542",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Jazz"
+			}, {
+				"id": "brick-lockup - 976439552",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/b2/85/81/b2858151-a07e-843d-3891-9c780de5d52a/6b21db36-3924-4e33-b1dd-de21c7ee2cbf.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "20310c",
+						"textColor2": "192609",
+						"textColor4": "2b4210",
+						"textColor1": "0b1104",
+						"bgColor": "72b12d",
+						"hasP3": false
+					}
+				},
+				"title": "Reggae",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439552"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-reggae/976439552"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439552"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-reggae/976439552"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-reggae/976439552",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439552",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Reggae"
+			}, {
+				"id": "brick-lockup - 976439586",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/d0/69/d3/d069d3d0-b4ea-07a3-a95c-7f025adf8f60/4e941745-d668-49d1-90c3-c2a53340097f.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "8d61ca",
+						"textColor2": "a572ee",
+						"textColor4": "865cc2",
+						"textColor1": "ae77f9",
+						"bgColor": "0a070f",
+						"hasP3": false
+					}
+				},
+				"title": "Film, TV & Stage",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439586"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-film-tv-stage/976439586"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439586"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-film-tv-stage/976439586"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-film-tv-stage/976439586",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439586",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Film, TV & Stage"
+			}, {
+				"id": "brick-lockup - 1558257146",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/a6/ce/e4/a6cee446-9fe7-4504-a50c-8a8d90432219/b1a1afd0-528a-4d36-aaf4-0b62b9bd1974.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "e4c8cf",
+						"textColor2": "f4e8eb",
+						"textColor4": "e0bec7",
+						"textColor1": "f9f3f5",
+						"bgColor": "921938",
+						"hasP3": false
+					}
+				},
+				"title": "Motivation",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558257146"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-motivation/1558257146"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558257146"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-motivation/1558257146"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-motivation/1558257146",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558257146",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Motivation"
+			}, {
+				"id": "brick-lockup - 976439585",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/18/46/21/18462111-3c1d-3818-d1b1-713e4ecca1c2/763b3dd9-0e43-4322-a5eb-4830e9034ddb.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "1b1b34",
+						"textColor2": "090912",
+						"textColor4": "201f3c",
+						"textColor1": "030307",
+						"bgColor": "7978e7",
+						"hasP3": false
+					}
+				},
+				"title": "Soul/Funk",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439585"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-soul-funk/976439585"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439585"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-soul-funk/976439585"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-soul-funk/976439585",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439585",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Soul/Funk"
+			}, {
+				"id": "brick-lockup - 1558257443",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/1e/ef/c9/1eefc9ec-b249-b0ad-4253-c988d591dafb/6ad330f2-6961-4666-86b8-a139cfe0d400.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "2fd5be",
+						"textColor2": "36f0d5",
+						"textColor4": "2ed4bc",
+						"textColor1": "37f3d9",
+						"bgColor": "0e6156",
+						"hasP3": false
+					}
+				},
+				"title": "Wellbeing",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1558257443"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-wellbeing/1558257443"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1558257443"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-wellbeing/1558257443"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-wellbeing/1558257443",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1558257443",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Wellbeing"
+			}, {
+				"id": "brick-lockup - 1526866702",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/17/9d/5e/179d5e31-c15a-08f8-78eb-a7e83ecbf2f0/d676ae15-36eb-4748-9a67-1bdb5ba8efaa.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "3c3003",
+						"textColor2": "221b02",
+						"textColor4": "463904",
+						"textColor1": "141001",
+						"bgColor": "dab10d",
+						"hasP3": false
+					}
+				},
+				"title": "2010s",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1526866702"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-2010s/1526866702"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1526866702"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-2010s/1526866702"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-2010s/1526866702",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1526866702",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music 2010s"
+			}, {
+				"id": "brick-lockup - 1526866135",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features126/v4/73/c5/16/73c51608-bb46-c3f4-ee8f-44f534829ca4/8d7abe21-9bc8-49bc-b8ff-8e948ec081b3.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "322903",
+						"textColor2": "201a01",
+						"textColor4": "453804",
+						"textColor1": "090700",
+						"bgColor": "dab10d",
+						"hasP3": false
+					}
+				},
+				"title": "’60s",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "1526866135"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-60s/1526866135"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "1526866135"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-60s/1526866135"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-60s/1526866135",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "1526866135",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music ’60s"
+			}, {
+				"id": "brick-lockup - 976439527",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/b1/86/89/b1868989-f8c4-2e7a-b3ea-317ae3b72aa1/6f017db2-efe7-4c64-bddf-2d909e2f4ae2.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "39230b",
+						"textColor2": "1e1305",
+						"textColor4": "41290c",
+						"textColor1": "140c04",
+						"bgColor": "cd8028",
+						"hasP3": false
+					}
+				},
+				"title": "Americana",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439527"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-americana/976439527"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439527"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-americana/976439527"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-americana/976439527",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439527",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Americana"
+			}, {
+				"id": "brick-lockup - 976439528",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/89/8c/ae/898caef0-5acd-892b-5302-0708a84146c6/cda15361-acb7-4365-9f57-7832e0dcce73.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "0e2333",
+						"textColor2": "0b1b28",
+						"textColor4": "15324a",
+						"textColor1": "03080c",
+						"bgColor": "3c8fd2",
+						"hasP3": false
+					}
+				},
+				"title": "Blues",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439528"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-blues/976439528"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439528"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-blues/976439528"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-blues/976439528",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439528",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Blues"
+			}, {
+				"id": "brick-lockup - 976439587",
+				"artwork": {
+					"dictionary": {
+						"width": 4320,
+						"url": "https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/d7/a0/11/d7a011c4-eac7-8660-17a4-8c995f160d42/03ae5886-1c46-446b-b18f-95b9fe189d2d.png/{w}x{h}{c}.{f}",
+						"height": 1080,
+						"textColor3": "0d200e",
+						"textColor2": "020502",
+						"textColor4": "0e220f",
+						"textColor1": "010301",
+						"bgColor": "3d9543",
+						"hasP3": false
+					}
+				},
+				"title": "Worldwide",
+				"contentDescriptor": {
+					"kind": "appleCurator",
+					"identifiers": {
+						"storeAdamID": "976439587"
+					},
+					"url": "https://music.apple.com/us/curator/apple-music-worldwide/976439587"
+				},
+				"segue": {
+					"$kind": "flowAction",
+					"destination": {
+						"kind": "catalogItemDetailPage",
+						"contentDescriptor": {
+							"kind": "appleCurator",
+							"identifiers": {
+								"storeAdamID": "976439587"
+							},
+							"url": "https://music.apple.com/us/curator/apple-music-worldwide/976439587"
+						},
+						"prominentItemIdentifier": null
+					},
+					"actionMetrics": {
+						"data": [{
+							"fields": {
+								"actionDetails": {
+									"kind": "appleCurator"
+								},
+								"actionUrl": "https://music.apple.com/us/curator/apple-music-worldwide/976439587",
+								"actionType": "navigate",
+								"eventType": "click",
+								"targetType": "Category",
+								"targetId": "976439587",
+								"eventVersion": 5
+							},
+							"includingFields": ["pageFields", "languages"],
+							"excludingFields": [],
+							"topic": "xp_its_music_main",
+							"shouldFlush": false
+						}],
+						"custom": {}
+					}
+				},
+				"accessibilityLabel": "Apple Music Worldwide"
+			}],
+			"header": {
+				"kind": "default",
+				"item": {
+					"titleLink": {
+						"title": "Browse Categories"
+					}
+				}
+			},
+			"style": "regular"
+		}],
+		"invalidationRules": {
+			"eventTriggers": [{
+				"events": [{
+					"name": "subscriptionStatusChange"
+				}],
+				"intent": {
+					"$kind": "RefreshPageIntent",
+					"intent": {
+						"storefront": "us",
+						"language": null,
+						"$kind": "SearchLandingPageIntent",
+						"inLibrary": false
+					},
+					"reason": "Subscription status changed"
+				}
+			}, {
+				"events": [{
+					"name": "expirationDate",
+					"date": "2024-03-19T04:38:27.008Z"
+				}],
+				"intent": {
+					"$kind": "RefreshPageIntent",
+					"intent": {
+						"storefront": "us",
+						"language": null,
+						"$kind": "SearchLandingPageIntent",
+						"inLibrary": false
+					},
+					"reason": "Exceeded expiration date"
+				},
+				"deferIntentUntilEvents": ["nextPageDisappearance"]
+			}]
+		},
+		"canonicalURL": "https://music.apple.com/us/search",
+		"scopeBar": null,
+		"search": true,
+		"seoData": {
+			"url": "https://music.apple.com/us/search",
+			"noIndex": false,
+			"noFollow": false,
+			"siteName": "Apple Music - Web Player",
+			"pageTitle": "Music Genres and Categories on Apple Music",
+			"description": "Browse Apple Music by category. Listen to genres including Pop, R&B, Country and more.",
+			"fileType": "png",
+			"artworkUrl": "/assets/meta/apple-music.png",
+			"crop": "bb",
+			"height": 630,
+			"width": 1200,
+			"appleStoreId": "1108187390",
+			"appleStoreName": "Apple Music",
+			"appleTitle": "Music Genres and Categories on Apple Music",
+			"appleDescription": "Browse Apple Music by category. Listen to genres including Pop, R&B, Country and more.",
+			"socialDescription": "Browse Apple Music by category. Listen to genres including Pop, R&B, Country and more.",
+			"socialTitle": "Music Genres and Categories on Apple Music",
+			"twitterSite": "@AppleMusic",
+			"twitterCardType": "summary_large_image",
+			"twitterWidth": 1200,
+			"twitterHeight": 630,
+			"twitterCropCode": "bb",
+			"showOrgData": false
+		}
+	}
+}]

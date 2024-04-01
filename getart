@@ -1,4 +1,9 @@
-#! /bin/sh
+#!/bin/bash
 
-# This script is used to allow shadowenv to work with the getart script
-swift run getart "$@"
+script_location="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
+declare -r script_location
+
+swift run \
+	--configuration release \
+	--package-path "$script_location" \
+	getart "$@"
