@@ -5,10 +5,13 @@ import PackageDescription
 let package = Package(
 	name: "getart",
 	platforms: [.macOS(.v14)],
+	products: [
+		.executable(name: "getart", targets: ["getart"]),
+	],
 	dependencies: [
 		.package(url: "https://github.com/M3U8Kit/M3U8Parser.git", from: "1.1.0"),
 		.package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.7.2"),
-		.package(url: "https://github.com/realm/SwiftLint.git", from: "0.54.0"),
+		.package(url: "https://github.com/realm/SwiftLint.git", from: "0.55.1"),
 	],
 	targets: [
 		.executableTarget(
@@ -19,7 +22,7 @@ let package = Package(
 			],
 			path: "Sources/getart/Sources",
 			plugins: [
-				.plugin(name: "SwiftLintPlugin", package: "SwiftLint"),
+				.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLint"),
 			]
 		),
 		.testTarget(
@@ -29,10 +32,10 @@ let package = Package(
 			],
 			path: "Sources/getart/Tests",
 			resources: [
-				.copy("test-data"),
+				.process("test-data"),
 			],
 			plugins: [
-				.plugin(name: "SwiftLintPlugin", package: "SwiftLint"),
+				.plugin(name: "SwiftLintBuildToolPlugin", package: "SwiftLint"),
 			]
 		),
 	]
