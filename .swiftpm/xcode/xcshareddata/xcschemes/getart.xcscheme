@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1530"
+   LastUpgradeVersion = "1540"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -64,7 +64,19 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "&quot;https://music.apple.com/us/album/pi%C3%B1ata/1705349861&quot;"
+            argument = "with video &#x1f447;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "https://music.apple.com/us/album/the-border/1734857782"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "without video &#x1f447;"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "https://music.apple.com/us/album/lapse/1736201082"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
