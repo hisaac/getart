@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #MISE description="Clean the project"
 
-set -euo pipefail
+set -euxo pipefail
 
 killall -q Xcode || true
 swift package clean

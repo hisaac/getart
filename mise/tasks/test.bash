@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #MISE description="Run the project's tests"
 
-set -euo pipefail
+set -euxo pipefail
 
 swift test
