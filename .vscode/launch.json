@@ -1,52 +1,22 @@
 {
 	"configurations": [
 		{
-			"type": "lldb",
+			"type": "swift",
 			"request": "launch",
-			"sourceLanguages": [
-				"swift"
-			],
-			"name": "Debug getart",
-			"program": "${workspaceFolder:getart}/.build/debug/getart",
 			"args": [],
 			"cwd": "${workspaceFolder:getart}",
+			"name": "Debug getart",
+			"program": "${workspaceFolder:getart}/.build/debug/getart",
 			"preLaunchTask": "swift: Build Debug getart"
 		},
 		{
-			"type": "lldb",
+			"type": "swift",
 			"request": "launch",
-			"sourceLanguages": [
-				"swift"
-			],
-			"name": "Release getart",
-			"program": "${workspaceFolder:getart}/.build/release/getart",
 			"args": [],
 			"cwd": "${workspaceFolder:getart}",
+			"name": "Release getart",
+			"program": "${workspaceFolder:getart}/.build/release/getart",
 			"preLaunchTask": "swift: Build Release getart"
-		},
-		{
-			"type": "lldb",
-			"request": "launch",
-			"sourceLanguages": [
-				"swift"
-			],
-			"args": [],
-			"cwd": "${workspaceFolder:getart}/swift",
-			"name": "Debug getart (swift)",
-			"program": "${workspaceFolder:getart}/swift/.build/debug/getart",
-			"preLaunchTask": "swift: Build Debug getart (swift)"
-		},
-		{
-			"type": "lldb",
-			"request": "launch",
-			"sourceLanguages": [
-				"swift"
-			],
-			"args": [],
-			"cwd": "${workspaceFolder:getart}/swift",
-			"name": "Release getart (swift)",
-			"program": "${workspaceFolder:getart}/swift/.build/release/getart",
-			"preLaunchTask": "swift: Build Release getart (swift)"
 		}
 	]
 }

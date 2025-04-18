@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"editorconfig.editorconfig",
+		"github.vscode-github-actions",
+		"redhat.vscode-yaml",
+		"swiftlang.swift-vscode",
+		"tamasfe.even-better-toml",
+		"timonwong.shellcheck"
+	]
+}
