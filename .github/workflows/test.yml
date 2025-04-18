@@ -5,6 +5,8 @@ on: pull_request
 
 env:
   DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG }}
+  MISE_GITHUB_TOKEN: ${{ github.token }}
+  MISE_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG && 1 || 0 }}
 
 jobs:
   test:
@@ -12,7 +14,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jdx/mise-action@v2
-        env:
-          MISE_GITHUB_TOKEN: ${{ github.token }}
-          MISE_TRACE: ${{ env.DEBUG && 1 || 0 }}
       - run: mise run test
