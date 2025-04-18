@@ -1,9 +1,0 @@
-#!/bin/bash
-
-script_location="$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")"
-declare -r script_location
-
-swift run \
-	--configuration release \
-	--package-path "$script_location" \
-	getart "$@"

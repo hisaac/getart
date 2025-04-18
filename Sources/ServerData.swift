@@ -1,8 +1,6 @@
 import Foundation
 import M3U8Parser
 
-// swiftlint:disable nesting
-
 typealias ServerData = [ServerDatum]
 
 struct ServerDatum: Decodable {
@@ -98,5 +96,3 @@ extension VideoArtwork {
 		return videoURL
 	}
 }
-
-// swiftlint:enable nesting

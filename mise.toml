@@ -1,0 +1,7 @@
+[settings]
+experimental = true
+not_found_auto_install = true
+
+[tools]
+swift = "latest"
+usage = "latest"
