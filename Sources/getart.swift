@@ -32,14 +32,14 @@ struct getart {
 			throw getartError.jsonSerializationError
 		}
 
-		let serverData = try JSONDecoder().decode([MetaCodableServerData].self, from: serverDataJSONData).first
+		let serverData = try ServerData(from: serverDataJSONData)
 
-		if let artworkURL = try await serverData?.imageArtworkURL() {
+		if let artworkURL = serverData.imageArtworkURL() {
 			print("Opening artwork URL:", artworkURL)
 			NSWorkspace.shared.open(artworkURL)
 		}
 
-		if let videoURL = try await serverData?.videoArtworkURL() {
+		if let videoURL = try await serverData.videoArtworkURL() {
 			print("Opening video URL:", videoURL)
 			NSWorkspace.shared.open(videoURL)
 		}
