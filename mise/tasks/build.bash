@@ -6,6 +6,6 @@
 #USAGE 	help    "The configuration to build the project with"
 #USAGE }
 
-set -euxo pipefail
+set -euo pipefail
 
-swift build --configuration "$usage_configuration"
+swift build --configuration "$usage_configuration" | xcbeautify

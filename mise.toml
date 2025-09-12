@@ -1,7 +1,9 @@
 [settings]
 experimental = true
 not_found_auto_install = true
+activate_aggressive = true
 
 [tools]
-swift = "latest"
+# swift = "latest"
 usage = "latest"
+xcbeautify = 'latest'
