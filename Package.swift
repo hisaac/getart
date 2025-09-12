@@ -10,7 +10,7 @@ let package = Package(
 	],
 	dependencies: [
 		.package(url: "https://github.com/M3U8Kit/M3U8Parser.git", from: "1.1.0"),
-		.package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.8.7"),
+		.package(url: "https://github.com/scinfu/SwiftSoup.git", from: "2.11.0"),
 	],
 	targets: [
 		.executableTarget(

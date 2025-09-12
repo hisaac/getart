@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #MISE description="Run the project's tests"
 
-set -euxo pipefail
+set -euo pipefail
 
-swift test
+swift test | xcbeautify
