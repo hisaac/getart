@@ -1,0 +1,5320 @@
+[
+	{
+		"intent": {
+			"$kind": "AlbumDetailPageIntent",
+			"contentDescriptor": {
+				"kind": "album",
+				"identifiers": {
+					"storeAdamID": "1736201082"
+				},
+				"url": "https://music.apple.com/us/album/lapse/1736201082",
+				"locale": {
+					"storefront": "us",
+					"language": null
+				}
+			},
+			"prominentItemIdentifier": null
+		},
+		"data": {
+			"pageMetrics": {
+				"instructions": [
+					{
+						"data": {
+							"topic": "xp_its_music_main",
+							"shouldFlush": false,
+							"fields": {
+								"eventType": "page"
+							},
+							"includingFields": [
+								"pageFields",
+								"languages"
+							],
+							"excludingFields": []
+						},
+						"invocationPoints": [
+							"pageEnter"
+						]
+					}
+				],
+				"pageFields": {
+					"pageUrl": "https://music.apple.com/us/album/lapse/1736201082",
+					"pageType": "Album",
+					"pageFeatureName": "album_detail",
+					"pageId": "1736201082",
+					"page": "Album_1736201082"
+				},
+				"custom": {}
+			},
+			"sections": [
+				{
+					"id": "album-detail-header-section - 1736201082",
+					"itemKind": "containerDetailHeaderLockup",
+					"presentation": {
+						"kind": "single"
+					},
+					"items": [
+						{
+							"id": "album-detail-header - 1736201082",
+							"artwork": {
+								"dictionary": {
+									"width": 3000,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+									"height": 3000,
+									"textColor3": "d1d0d0",
+									"textColor2": "dcdcdc",
+									"textColor4": "b5b4b5",
+									"textColor1": "ffffff",
+									"bgColor": "1b1718",
+									"hasP3": false
+								}
+							},
+							"title": "Lapse",
+							"subtitleLinks": [
+								{
+									"title": "Idaho",
+									"segue": {
+										"$kind": "flowAction",
+										"destination": {
+											"kind": "catalogItemDetailPage",
+											"contentDescriptor": {
+												"kind": "artist",
+												"identifiers": {
+													"storeAdamID": "26095177"
+												},
+												"url": "https://music.apple.com/us/artist/idaho/26095177"
+											},
+											"prominentItemIdentifier": null
+										},
+										"actionMetrics": {
+											"data": [
+												{
+													"fields": {
+														"actionDetails": {
+															"kind": "artist"
+														},
+														"actionUrl": "https://music.apple.com/us/artist/idaho/26095177",
+														"actionType": "navigate",
+														"eventType": "click",
+														"targetType": "link",
+														"targetId": "26095177",
+														"eventVersion": 5
+													},
+													"includingFields": [
+														"pageFields",
+														"languages"
+													],
+													"excludingFields": [],
+													"topic": "xp_its_music_main",
+													"shouldFlush": false
+												}
+											],
+											"custom": {}
+										}
+									}
+								}
+							],
+							"tertiaryTitleLinks": null,
+							"quaternaryTitle": "ALTERNATIVE · 2024",
+							"modalPresentationDescriptor": {
+								"headerTitle": "Lapse",
+								"headerSubtitle": "Idaho · 2024"
+							},
+							"showExplicitBadge": false,
+							"audioBadges": {
+								"dolbyAtmos": false,
+								"dolbyAudio": false,
+								"lossless": true,
+								"hiResLossless": true,
+								"digitalMaster": true
+							},
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1736201082"
+								},
+								"url": "https://music.apple.com/us/album/lapse/1736201082"
+							},
+							"playButton": {
+								"id": "play-button-non-subscriber-1736201082",
+								"segue": {
+									"$kind": "playAction",
+									"actionMetrics": {
+										"data": [
+											{
+												"fields": {
+													"actionDetails": {
+														"kind": "album"
+													},
+													"actionUrl": "https://music.apple.com/us/album/lapse/1736201082",
+													"actionType": "play",
+													"eventType": "click",
+													"targetType": "button",
+													"targetId": "1736201082",
+													"eventVersion": 5
+												},
+												"includingFields": [
+													"pageFields",
+													"languages"
+												],
+												"excludingFields": [],
+												"topic": "xp_its_music_main",
+												"shouldFlush": false
+											}
+										],
+										"custom": {}
+									},
+									"items": [
+										{
+											"contentDescriptor": {
+												"kind": "album",
+												"identifiers": {
+													"storeAdamID": "1736201082"
+												},
+												"url": "https://music.apple.com/us/album/lapse/1736201082"
+											}
+										}
+									],
+									"containerContentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1736201082"
+										},
+										"url": "https://music.apple.com/us/album/lapse/1736201082"
+									},
+									"groupingIdentifier": null
+								},
+								"title": "Preview"
+							},
+							"shuffleButton": null,
+							"videoArtwork": null,
+							"trackCount": 10,
+							"siriBannerConfiguration": null,
+							"isPreviewMode": true,
+							"offers": [
+								{
+									"buyParams": "productType=P&price=9990&salableAdamId=1736201082&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$9.99",
+									"price": 9.99
+								},
+								{
+									"buyParams": "productType=P&price=0&salableAdamId=1736201082&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "track-list - 1736201082",
+					"itemKind": "trackLockup",
+					"presentation": {
+						"kind": "collection",
+						"layout": "list"
+					},
+					"items": [
+						{
+							"id": "track-lockup - 1736201082 - 1736201085",
+							"title": "Kamikaze",
+							"trackNumber": 1,
+							"tertiaryLinks": null,
+							"duration": 212736,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201085"
+								},
+								"url": "https://music.apple.com/us/album/kamikaze/1736201082?i=1736201085"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/kamikaze/1736201082?i=1736201085",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201085",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201085"
+											},
+											"url": "https://music.apple.com/us/album/kamikaze/1736201082?i=1736201085"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": false,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/e4/13/4be4139c-3243-b9f2-8e7f-9c299b47a0c1/mzaf_17991403165214852519.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201277",
+							"title": "On Fire",
+							"trackNumber": 2,
+							"tertiaryLinks": null,
+							"duration": 190731,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201277"
+								},
+								"url": "https://music.apple.com/us/album/on-fire/1736201082?i=1736201277"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/on-fire/1736201082?i=1736201277",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201277",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201277"
+											},
+											"url": "https://music.apple.com/us/album/on-fire/1736201082?i=1736201277"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": true,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/9d/f2/679df2c6-6b92-89b3-2418-43f32641bbf2/mzaf_1923535211362055730.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201282",
+							"title": "West Side",
+							"trackNumber": 3,
+							"tertiaryLinks": null,
+							"duration": 198394,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201282"
+								},
+								"url": "https://music.apple.com/us/album/west-side/1736201082?i=1736201282"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/west-side/1736201082?i=1736201282",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201282",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201282"
+											},
+											"url": "https://music.apple.com/us/album/west-side/1736201082?i=1736201282"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": false,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/93/33/da9333bd-c519-ac4f-3403-bd736fd72955/mzaf_14832757051127476475.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201291",
+							"title": "Heaven On Earth",
+							"trackNumber": 4,
+							"tertiaryLinks": null,
+							"duration": 151431,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201291"
+								},
+								"url": "https://music.apple.com/us/album/heaven-on-earth/1736201082?i=1736201291"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/heaven-on-earth/1736201082?i=1736201291",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201291",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201291"
+											},
+											"url": "https://music.apple.com/us/album/heaven-on-earth/1736201082?i=1736201291"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": false,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/ea/38/9fea38d9-01b5-1fa9-1fbb-b8aafb2a9fc0/mzaf_15866245208087002513.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201294",
+							"title": "Heat Seek",
+							"trackNumber": 5,
+							"tertiaryLinks": null,
+							"duration": 159859,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201294"
+								},
+								"url": "https://music.apple.com/us/album/heat-seek/1736201082?i=1736201294"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/heat-seek/1736201082?i=1736201294",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201294",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201294"
+											},
+											"url": "https://music.apple.com/us/album/heat-seek/1736201082?i=1736201294"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": false,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/23/e2/ce23e2ba-ac3d-b557-3cc0-68dd5dc4af84/mzaf_15271821649058382615.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201296",
+							"title": "Somehow",
+							"trackNumber": 6,
+							"tertiaryLinks": null,
+							"duration": 247818,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201296"
+								},
+								"url": "https://music.apple.com/us/album/somehow/1736201082?i=1736201296"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/somehow/1736201082?i=1736201296",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201296",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201296"
+											},
+											"url": "https://music.apple.com/us/album/somehow/1736201082?i=1736201296"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": false,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/e6/08/33e60837-57ff-7142-692b-ea1ba12124dd/mzaf_5049896131772184096.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201417",
+							"title": "Snakes",
+							"trackNumber": 7,
+							"tertiaryLinks": null,
+							"duration": 213925,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201417"
+								},
+								"url": "https://music.apple.com/us/album/snakes/1736201082?i=1736201417"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/snakes/1736201082?i=1736201417",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201417",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201417"
+											},
+											"url": "https://music.apple.com/us/album/snakes/1736201082?i=1736201417"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": true,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/00/52/7c005246-29e3-aeb0-88c3-1ec8009f246a/mzaf_2420859988102636441.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201422",
+							"title": "Across The Sky",
+							"trackNumber": 8,
+							"tertiaryLinks": null,
+							"duration": 172165,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201422"
+								},
+								"url": "https://music.apple.com/us/album/across-the-sky/1736201082?i=1736201422"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/across-the-sky/1736201082?i=1736201422",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201422",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201422"
+											},
+											"url": "https://music.apple.com/us/album/across-the-sky/1736201082?i=1736201422"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": true,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/da/29/f6da2979-af58-dc13-03cd-ec6bd4d98f57/mzaf_17172154670592906602.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201442",
+							"title": "Throw The Game",
+							"trackNumber": 9,
+							"tertiaryLinks": null,
+							"duration": 249490,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201442"
+								},
+								"url": "https://music.apple.com/us/album/throw-the-game/1736201082?i=1736201442"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/throw-the-game/1736201082?i=1736201442",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201442",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201442"
+											},
+											"url": "https://music.apple.com/us/album/throw-the-game/1736201082?i=1736201442"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": false,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/3e/2b/543e2b31-7e98-83c2-5055-5086c45d59d1/mzaf_6061840756441649358.plus.aac.ep.m4a",
+							"socialProfileContentDescriptor": null
+						},
+						{
+							"id": "track-lockup - 1736201082 - 1736201443",
+							"title": "29 Palms",
+							"trackNumber": 10,
+							"tertiaryLinks": null,
+							"duration": 79169,
+							"contentDescriptor": {
+								"kind": "song",
+								"identifiers": {
+									"storeAdamID": "1736201443"
+								},
+								"url": "https://music.apple.com/us/album/29-palms/1736201082?i=1736201443"
+							},
+							"artwork": null,
+							"subtitleLinks": null,
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "song"
+												},
+												"actionUrl": "https://music.apple.com/us/album/29-palms/1736201082?i=1736201443",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1736201443",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "song",
+											"identifiers": {
+												"storeAdamID": "1736201443"
+											},
+											"url": "https://music.apple.com/us/album/29-palms/1736201082?i=1736201443"
+										}
+									}
+								],
+								"containerContentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082"
+								},
+								"groupingIdentifier": "1736201082"
+							},
+							"layoutStyle": {
+								"kind": "albumTrackList",
+								"hasVideo": false
+							},
+							"showExplicitBadge": false,
+							"isProminent": false,
+							"pauseAction": {
+								"$kind": "pausePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"resumeAction": {
+								"$kind": "resumePlaybackAction",
+								"actionMetrics": {
+									"data": [],
+									"custom": {}
+								}
+							},
+							"isDisabled": false,
+							"isPreviewMode": true,
+							"composer": "Jeff Martin & Robbie Fronzo",
+							"showPopularityIndicator": false,
+							"discNumber": 1,
+							"artistName": "Idaho",
+							"previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/a2/08/58a208e4-0f46-e059-4a34-0480e0796570/mzaf_6100464820510907427.plus.aac.p.m4a",
+							"socialProfileContentDescriptor": null
+						}
+					],
+					"containerContentDescriptor": {
+						"kind": "album",
+						"identifiers": {
+							"storeAdamID": "1736201082"
+						},
+						"url": "https://music.apple.com/us/album/lapse/1736201082"
+					},
+					"containerArtwork": {
+						"dictionary": {
+							"width": 3000,
+							"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+							"height": 3000,
+							"textColor3": "d1d0d0",
+							"textColor2": "dcdcdc",
+							"textColor4": "b5b4b5",
+							"textColor1": "ffffff",
+							"bgColor": "1b1718",
+							"hasP3": false
+						}
+					}
+				},
+				{
+					"id": "track-list-section - 1736201082",
+					"itemKind": "containerDetailTracklistFooterLockup",
+					"presentation": {
+						"kind": "single"
+					},
+					"items": [
+						{
+							"id": "tracklist-footer - 1736201082",
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1736201082"
+								},
+								"url": "https://music.apple.com/us/album/lapse/1736201082"
+							},
+							"numberOfSocialBadges": 10,
+							"description": "May 31, 2024\n10 Songs, 31 minutes\n℗ 2024 Martin Music under exclusive license to Arts & Crafts Productions",
+							"linkSection": null,
+							"offers": [
+								{
+									"buyParams": "productType=P&price=9990&salableAdamId=1736201082&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$9.99",
+									"price": 9.99
+								},
+								{
+									"buyParams": "productType=P&price=0&salableAdamId=1736201082&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "spacerSection - footer - 1736201082",
+					"itemKind": "spacer",
+					"presentation": {
+						"kind": "single"
+					},
+					"backgroundTreatment": "alternate",
+					"items": [
+						{
+							"id": "spacerSection - footer - 1736201082 - spacer item - footer - 1736201082"
+						}
+					]
+				},
+				{
+					"id": "video - related-videos",
+					"itemKind": "verticalVideoLockup",
+					"presentation": {
+						"kind": "collection",
+						"layout": {
+							"kind": "shelf",
+							"numberOfRows": 1
+						}
+					},
+					"items": [
+						{
+							"id": "related-videos - 1738103867",
+							"artwork": {
+								"dictionary": {
+									"width": 1912,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Video211/v4/72/91/39/729139d8-24b0-8b77-0537-453bf28baea6/24UMGIM30423.crop.jpg/{w}x{h}mv.{f}",
+									"height": 1072,
+									"textColor3": "d6d2a6",
+									"textColor2": "fef5b0",
+									"textColor4": "d7cc95",
+									"textColor1": "fcfcc6",
+									"bgColor": "3c2828",
+									"hasP3": false
+								}
+							},
+							"title": "On Fire",
+							"contentDescriptor": {
+								"kind": "musicVideo",
+								"identifiers": {
+									"storeAdamID": "1738103867"
+								},
+								"url": "https://music.apple.com/us/music-video/on-fire/1738103867"
+							},
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "musicVideo",
+										"identifiers": {
+											"storeAdamID": "1738103867"
+										},
+										"url": "https://music.apple.com/us/music-video/on-fire/1738103867"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "musicVideo"
+												},
+												"actionUrl": "https://music.apple.com/us/music-video/on-fire/1738103867",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1738103867",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"name": "On Fire",
+							"titleLinks": [
+								{
+									"title": "On Fire"
+								}
+							],
+							"subtitleLinks": [
+								{
+									"title": "Idaho",
+									"segue": {
+										"$kind": "flowAction",
+										"destination": {
+											"kind": "catalogItemDetailPage",
+											"contentDescriptor": {
+												"kind": "artist",
+												"identifiers": {
+													"storeAdamID": "26095177"
+												},
+												"url": "https://music.apple.com/us/artist/idaho/26095177"
+											},
+											"prominentItemIdentifier": null
+										},
+										"actionMetrics": {
+											"data": [
+												{
+													"fields": {
+														"actionDetails": {
+															"kind": "artist"
+														},
+														"actionUrl": "https://music.apple.com/us/artist/idaho/26095177",
+														"actionType": "navigate",
+														"eventType": "click",
+														"targetType": "link",
+														"targetId": "26095177",
+														"eventVersion": 5
+													},
+													"includingFields": [
+														"pageFields",
+														"languages"
+													],
+													"excludingFields": [],
+													"topic": "xp_its_music_main",
+													"shouldFlush": false
+												}
+											],
+											"custom": {}
+										}
+									}
+								}
+							],
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "musicVideo"
+												},
+												"actionUrl": "https://music.apple.com/us/music-video/on-fire/1738103867",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1738103867",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "musicVideo",
+											"identifiers": {
+												"storeAdamID": "1738103867"
+											},
+											"url": "https://music.apple.com/us/music-video/on-fire/1738103867"
+										}
+									}
+								],
+								"groupingIdentifier": "video - related-videos"
+							},
+							"showExplicitBadge": false,
+							"displayStyle": "large"
+						}
+					],
+					"header": {
+						"kind": "default",
+						"item": {
+							"titleLink": {
+								"title": "Music Videos",
+								"segue": null
+							}
+						}
+					},
+					"displaySeparator": false,
+					"backgroundTreatment": "alternate"
+				},
+				{
+					"id": "more-by-artist - more-by-artist",
+					"itemKind": "squareLockup",
+					"presentation": {
+						"kind": "collection",
+						"layout": {
+							"kind": "shelf",
+							"numberOfRows": 1
+						}
+					},
+					"items": [
+						{
+							"id": "more-by-artist - 80874318",
+							"artwork": {
+								"dictionary": {
+									"width": 600,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.jeeautyc.tif/{w}x{h}bb.{f}",
+									"height": 600,
+									"textColor3": "d6d3d0",
+									"textColor2": "f5f1f3",
+									"textColor4": "d1cecf",
+									"textColor1": "fbf8f5",
+									"bgColor": "41403e",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "Hearts of Palm"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "80874318"
+								},
+								"url": "https://music.apple.com/us/album/hearts-of-palm/80874318"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2000"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "80874318"
+										},
+										"url": "https://music.apple.com/us/album/hearts-of-palm/80874318"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/hearts-of-palm/80874318",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "80874318",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/hearts-of-palm/80874318",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "80874318",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "80874318"
+											},
+											"url": "https://music.apple.com/us/album/hearts-of-palm/80874318"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "Hearts of Palm",
+							"trackCount": 11,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 80874870",
+							"artwork": {
+								"dictionary": {
+									"width": 600,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/14/3f/32/143f32a4-f788-d041-23a2-ec09092d1d7d/mzi.krdskwyd.tif/{w}x{h}bb.{f}",
+									"height": 600,
+									"textColor3": "34190b",
+									"textColor2": "050405",
+									"textColor4": "34190b",
+									"textColor1": "040405",
+									"bgColor": "f16d23",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "The Lone Gunman"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "80874870"
+								},
+								"url": "https://music.apple.com/us/album/the-lone-gunman/80874870"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2005"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "80874870"
+										},
+										"url": "https://music.apple.com/us/album/the-lone-gunman/80874870"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/the-lone-gunman/80874870",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "80874870",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/the-lone-gunman/80874870",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "80874870",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "80874870"
+											},
+											"url": "https://music.apple.com/us/album/the-lone-gunman/80874870"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "The Lone Gunman",
+							"trackCount": 16,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 80874620",
+							"artwork": {
+								"dictionary": {
+									"width": 600,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.hlsttwdd.tif/{w}x{h}bb.{f}",
+									"height": 600,
+									"textColor3": "e3d3d3",
+									"textColor2": "f4d1c7",
+									"textColor4": "dbb6ab",
+									"textColor1": "fef6f9",
+									"bgColor": "78493c",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "Levitate"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "80874620"
+								},
+								"url": "https://music.apple.com/us/album/levitate/80874620"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2001"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "80874620"
+										},
+										"url": "https://music.apple.com/us/album/levitate/80874620"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/levitate/80874620",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "80874620",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/levitate/80874620",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "80874620",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "80874620"
+											},
+											"url": "https://music.apple.com/us/album/levitate/80874620"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "Levitate",
+							"trackCount": 11,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 274727917",
+							"artwork": {
+								"dictionary": {
+									"width": 600,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music/89/39/ca/mzi.mqwryics.tif/{w}x{h}bb.{f}",
+									"height": 600,
+									"textColor3": "bf9f6e",
+									"textColor2": "d6b774",
+									"textColor4": "af945f",
+									"textColor1": "eac487",
+									"bgColor": "120909",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "The Forbidden EP - Alas: Special Edition"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "274727917"
+								},
+								"url": "https://music.apple.com/us/album/the-forbidden-ep-alas-special-edition/274727917"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2008"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "274727917"
+										},
+										"url": "https://music.apple.com/us/album/the-forbidden-ep-alas-special-edition/274727917"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/the-forbidden-ep-alas-special-edition/274727917",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "274727917",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/the-forbidden-ep-alas-special-edition/274727917",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "274727917",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "274727917"
+											},
+											"url": "https://music.apple.com/us/album/the-forbidden-ep-alas-special-edition/274727917"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "The Forbidden EP - Alas: Special Edition",
+							"trackCount": 21,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1513029992",
+							"artwork": {
+								"dictionary": {
+									"width": 3000,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/0d/08/92/0d0892bb-228d-e3a4-beb4-5b5080069832/20UMGIM13423.rgb.jpg/{w}x{h}bb.{f}",
+									"height": 3000,
+									"textColor3": "bf7e5a",
+									"textColor2": "dc914b",
+									"textColor4": "b97942",
+									"textColor1": "e39769",
+									"bgColor": "2d181f",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "Three Sheets To The Wind"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1513029992"
+								},
+								"url": "https://music.apple.com/us/album/three-sheets-to-the-wind/1513029992"
+							},
+							"subtitleLinks": [
+								{
+									"title": "1996"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1513029992"
+										},
+										"url": "https://music.apple.com/us/album/three-sheets-to-the-wind/1513029992"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/three-sheets-to-the-wind/1513029992",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1513029992",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/three-sheets-to-the-wind/1513029992",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1513029992",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1513029992"
+											},
+											"url": "https://music.apple.com/us/album/three-sheets-to-the-wind/1513029992"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "Three Sheets To The Wind",
+							"trackCount": 10,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1513018448",
+							"artwork": {
+								"dictionary": {
+									"width": 3000,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/e9/c1/d6/e9c1d626-32b8-0dbc-c52f-dae817769371/20UMGIM13751.rgb.jpg/{w}x{h}bb.{f}",
+									"height": 3000,
+									"textColor3": "bea758",
+									"textColor2": "e1a088",
+									"textColor4": "ba8672",
+									"textColor1": "e7c968",
+									"bgColor": "1c1e19",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "Year After Year"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1513018448"
+								},
+								"url": "https://music.apple.com/us/album/year-after-year/1513018448"
+							},
+							"subtitleLinks": [
+								{
+									"title": "1993"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1513018448"
+										},
+										"url": "https://music.apple.com/us/album/year-after-year/1513018448"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/year-after-year/1513018448",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1513018448",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/year-after-year/1513018448",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1513018448",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1513018448"
+											},
+											"url": "https://music.apple.com/us/album/year-after-year/1513018448"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "Year After Year",
+							"trackCount": 13,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1513024373",
+							"artwork": {
+								"dictionary": {
+									"width": 3000,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/8e/26/e8/8e26e861-6931-c1e4-247a-a0d083ab57ff/20UMGIM13747.rgb.jpg/{w}x{h}bb.{f}",
+									"height": 3000,
+									"textColor3": "303232",
+									"textColor2": "222f36",
+									"textColor4": "475359",
+									"textColor1": "050605",
+									"bgColor": "dfe3e4",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "This Way Out"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1513024373"
+								},
+								"url": "https://music.apple.com/us/album/this-way-out/1513024373"
+							},
+							"subtitleLinks": [
+								{
+									"title": "1994"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1513024373"
+										},
+										"url": "https://music.apple.com/us/album/this-way-out/1513024373"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/this-way-out/1513024373",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1513024373",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/this-way-out/1513024373",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1513024373",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1513024373"
+											},
+											"url": "https://music.apple.com/us/album/this-way-out/1513024373"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "This Way Out",
+							"trackCount": 11,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 80874766",
+							"artwork": {
+								"dictionary": {
+									"width": 600,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.mqkdntdt.tif/{w}x{h}bb.{f}",
+									"height": 600,
+									"textColor3": "2c2e30",
+									"textColor2": "151616",
+									"textColor4": "2c2e30",
+									"textColor1": "151616",
+									"bgColor": "88909a",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "We Were Young and Needed the Money"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "80874766"
+								},
+								"url": "https://music.apple.com/us/album/we-were-young-and-needed-the-money/80874766"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2002"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "80874766"
+										},
+										"url": "https://music.apple.com/us/album/we-were-young-and-needed-the-money/80874766"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/we-were-young-and-needed-the-money/80874766",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "80874766",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/we-were-young-and-needed-the-money/80874766",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "80874766",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "80874766"
+											},
+											"url": "https://music.apple.com/us/album/we-were-young-and-needed-the-money/80874766"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "We Were Young and Needed the Money",
+							"trackCount": 17,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 80874191",
+							"artwork": {
+								"dictionary": {
+									"width": 600,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.azmmkywq.tif/{w}x{h}bb.{f}",
+									"height": 600,
+									"textColor3": "cdbb5f",
+									"textColor2": "ebb537",
+									"textColor4": "c79d49",
+									"textColor1": "f3d953",
+									"bgColor": "383f8f",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "People Like Us Should Be Stopped - Live Vol. 1"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "80874191"
+								},
+								"url": "https://music.apple.com/us/album/people-like-us-should-be-stopped-live-vol-1/80874191"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2000"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "80874191"
+										},
+										"url": "https://music.apple.com/us/album/people-like-us-should-be-stopped-live-vol-1/80874191"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/people-like-us-should-be-stopped-live-vol-1/80874191",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "80874191",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/people-like-us-should-be-stopped-live-vol-1/80874191",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "80874191",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "80874191"
+											},
+											"url": "https://music.apple.com/us/album/people-like-us-should-be-stopped-live-vol-1/80874191"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "People Like Us Should Be Stopped - Live Vol. 1",
+							"trackCount": 12,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1607419202",
+							"artwork": {
+								"dictionary": {
+									"width": 1400,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/13/8f/88/138f88ed-8c19-270b-2882-b317336e455a/724101759321.jpg/{w}x{h}bb.{f}",
+									"height": 1400,
+									"textColor3": "252e35",
+									"textColor2": "171b20",
+									"textColor4": "363f47",
+									"textColor1": "02050a",
+									"bgColor": "b3cfe4",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "You Were a Dick"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1607419202"
+								},
+								"url": "https://music.apple.com/us/album/you-were-a-dick/1607419202"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2011"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1607419202"
+										},
+										"url": "https://music.apple.com/us/album/you-were-a-dick/1607419202"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/you-were-a-dick/1607419202",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1607419202",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/you-were-a-dick/1607419202",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1607419202",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1607419202"
+											},
+											"url": "https://music.apple.com/us/album/you-were-a-dick/1607419202"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "You Were a Dick",
+							"trackCount": 14,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1513011481",
+							"artwork": {
+								"dictionary": {
+									"width": 3000,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/fc/3c/1f/fc3c1fb8-268e-eb73-8fb0-3b6c2f532fc4/20UMGIM13421.rgb.jpg/{w}x{h}bb.{f}",
+									"height": 3000,
+									"textColor3": "c29e4f",
+									"textColor2": "d4ae5f",
+									"textColor4": "b59652",
+									"textColor1": "e4b85a",
+									"bgColor": "373522",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "The Palms EP"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1513011481"
+								},
+								"url": "https://music.apple.com/us/album/the-palms-ep/1513011481"
+							},
+							"subtitleLinks": [
+								{
+									"title": "1993"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1513011481"
+										},
+										"url": "https://music.apple.com/us/album/the-palms-ep/1513011481"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/the-palms-ep/1513011481",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1513011481",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/the-palms-ep/1513011481",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1513011481",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1513011481"
+											},
+											"url": "https://music.apple.com/us/album/the-palms-ep/1513011481"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "The Palms EP",
+							"trackCount": 4,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1506728360",
+							"artwork": {
+								"dictionary": {
+									"width": 3000,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/76/b4/93/76b493cd-3566-89c0-3260-f1a1bc5d23c7/5059505673894_cover.jpg/{w}x{h}bb.{f}",
+									"height": 3000,
+									"textColor3": "dfd1ea",
+									"textColor2": "e1ddd7",
+									"textColor4": "c8b7cb",
+									"textColor1": "ffffff",
+									"bgColor": "631c9a",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "Strandet i Paradis (feat. Idaho & DJ Ash) - Single"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1506728360"
+								},
+								"url": "https://music.apple.com/us/album/strandet-i-paradis-feat-idaho-dj-ash-single/1506728360"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2020"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1506728360"
+										},
+										"url": "https://music.apple.com/us/album/strandet-i-paradis-feat-idaho-dj-ash-single/1506728360"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/strandet-i-paradis-feat-idaho-dj-ash-single/1506728360",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1506728360",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/strandet-i-paradis-feat-idaho-dj-ash-single/1506728360",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1506728360",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1506728360"
+											},
+											"url": "https://music.apple.com/us/album/strandet-i-paradis-feat-idaho-dj-ash-single/1506728360"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "Strandet i Paradis (feat. Idaho & DJ Ash) - Single",
+							"trackCount": 1,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1608215468",
+							"artwork": {
+								"dictionary": {
+									"width": 3000,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1f/95/e9/1f95e915-c63c-63cc-63da-df455ba977ef/8425953001607.jpg/{w}x{h}bb.{f}",
+									"height": 3000,
+									"textColor3": "12202b",
+									"textColor2": "020508",
+									"textColor4": "13212c",
+									"textColor1": "010407",
+									"bgColor": "5993bb",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "Milenium - Single"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1608215468"
+								},
+								"url": "https://music.apple.com/us/album/milenium-single/1608215468"
+							},
+							"subtitleLinks": [
+								{
+									"title": "1995"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1608215468"
+										},
+										"url": "https://music.apple.com/us/album/milenium-single/1608215468"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/milenium-single/1608215468",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1608215468",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/milenium-single/1608215468",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1608215468",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1608215468"
+											},
+											"url": "https://music.apple.com/us/album/milenium-single/1608215468"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "Milenium - Single",
+							"trackCount": 3,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 1160664005",
+							"artwork": {
+								"dictionary": {
+									"width": 1400,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/81/41/d3/8141d36d-529f-e135-b83c-d5c549ce9223/0885014626992.png/{w}x{h}bb.{f}",
+									"height": 1400,
+									"textColor3": "cecece",
+									"textColor2": "d9d9d9",
+									"textColor4": "b9b9b9",
+									"textColor1": "f3f3f3",
+									"bgColor": "3b3b3b",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "Nettle Antidote (feat. Landon George, Ben Paulson, Alma Russ, Haakon Oyen & Idaho) - EP"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "1160664005"
+								},
+								"url": "https://music.apple.com/us/album/nettle-antidote-feat-landon-george-ben-paulson-alma/1160664005"
+							},
+							"subtitleLinks": [
+								{
+									"title": "2016"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "1160664005"
+										},
+										"url": "https://music.apple.com/us/album/nettle-antidote-feat-landon-george-ben-paulson-alma/1160664005"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/nettle-antidote-feat-landon-george-ben-paulson-alma/1160664005",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "1160664005",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/nettle-antidote-feat-landon-george-ben-paulson-alma/1160664005",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "1160664005",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "1160664005"
+											},
+											"url": "https://music.apple.com/us/album/nettle-antidote-feat-landon-george-ben-paulson-alma/1160664005"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "Nettle Antidote (feat. Landon George, Ben Paulson, Alma Russ, Haakon Oyen & Idaho) - EP",
+							"trackCount": 4,
+							"isAOD": false
+						},
+						{
+							"id": "more-by-artist - 899999770",
+							"artwork": {
+								"dictionary": {
+									"width": 1500,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/2e/bd/82/2ebd8286-0c52-82f2-7ba7-42d5c5c6fe58/888831499770.jpg/{w}x{h}bb.{f}",
+									"height": 1500,
+									"textColor3": "c1bec9",
+									"textColor2": "ebb98e",
+									"textColor4": "c5997b",
+									"textColor1": "e7e7f0",
+									"bgColor": "2b1931",
+									"hasP3": false
+								},
+								"cropStyle": "cc"
+							},
+							"titleLinks": [
+								{
+									"title": "No Game - Single"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "album",
+								"identifiers": {
+									"storeAdamID": "899999770"
+								},
+								"url": "https://music.apple.com/us/album/no-game-single/899999770"
+							},
+							"subtitleLinks": [
+								{
+									"title": "1994"
+								}
+							],
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "album",
+										"identifiers": {
+											"storeAdamID": "899999770"
+										},
+										"url": "https://music.apple.com/us/album/no-game-single/899999770"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/no-game-single/899999770",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "899999770",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "album"
+												},
+												"actionUrl": "https://music.apple.com/us/album/no-game-single/899999770",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "899999770",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "album",
+											"identifiers": {
+												"storeAdamID": "899999770"
+											},
+											"url": "https://music.apple.com/us/album/no-game-single/899999770"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"accessibilityLabel": "No Game - Single",
+							"trackCount": 3,
+							"isAOD": false
+						}
+					],
+					"header": {
+						"kind": "default",
+						"item": {
+							"titleLink": {
+								"title": "More By Idaho",
+								"segue": {
+									"$kind": "flowAction",
+									"destination": {
+										"kind": "catalogPage",
+										"intent": {
+											"$kind": "ContainerDetailSeeAllPageIntent",
+											"url": "/v1/catalog/us/albums/1736201082/view/more-by-artist?l=en-US",
+											"viewKind": "more-by-artist",
+											"id": "more-by-artist",
+											"title": "More By Idaho",
+											"containerType": "albums"
+										}
+									},
+									"actionMetrics": {
+										"data": [
+											{
+												"fields": {
+													"actionUrl": "/v1/catalog/us/albums/1736201082/view/more-by-artist?l=en-US",
+													"actionType": "navigate",
+													"eventType": "click",
+													"targetType": "button",
+													"targetId": "seeAll",
+													"eventVersion": 5
+												},
+												"includingFields": [
+													"pageFields",
+													"languages"
+												],
+												"excludingFields": [],
+												"topic": "xp_its_music_main",
+												"shouldFlush": false
+											}
+										],
+										"custom": {}
+									}
+								}
+							}
+						}
+					},
+					"displaySeparator": false,
+					"backgroundTreatment": "alternate"
+				},
+				{
+					"id": "appears-on - appears-on",
+					"itemKind": "squareLockup",
+					"presentation": {
+						"kind": "collection",
+						"layout": {
+							"kind": "shelf",
+							"numberOfRows": 1
+						}
+					},
+					"items": [
+						{
+							"id": "appears-on - pl.132b9a231cbf464086b4f838b2726f94",
+							"artwork": {
+								"dictionary": {
+									"width": 1080,
+									"url": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/2e/81/d4/2e81d4e0-0f17-c1c8-d6fd-f61f6815454d/U0MtTVMtV1ctTmV3X0luX0FsdGVybmF0aXZlLUFEQU1fSUQ9OTkxNDAwNzI3LnBuZw.png/{w}x{h}SC.DN01.{f}?l=en-US",
+									"height": 1080,
+									"textColor3": "e2a0a8",
+									"textColor2": "fba4b2",
+									"textColor4": "e48492",
+									"textColor1": "ffffff",
+									"bgColor": "8e1626",
+									"hasP3": false
+								}
+							},
+							"titleLinks": [
+								{
+									"title": "New in Alternative"
+								}
+							],
+							"contentDescriptor": {
+								"kind": "playlist",
+								"identifiers": {
+									"storeAdamID": "pl.132b9a231cbf464086b4f838b2726f94"
+								},
+								"url": "https://music.apple.com/us/playlist/new-in-alternative/pl.132b9a231cbf464086b4f838b2726f94"
+							},
+							"segue": {
+								"$kind": "flowAction",
+								"destination": {
+									"kind": "catalogItemDetailPage",
+									"contentDescriptor": {
+										"kind": "playlist",
+										"identifiers": {
+											"storeAdamID": "pl.132b9a231cbf464086b4f838b2726f94"
+										},
+										"url": "https://music.apple.com/us/playlist/new-in-alternative/pl.132b9a231cbf464086b4f838b2726f94"
+									},
+									"prominentItemIdentifier": null
+								},
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "playlist"
+												},
+												"actionUrl": "https://music.apple.com/us/playlist/new-in-alternative/pl.132b9a231cbf464086b4f838b2726f94",
+												"actionType": "navigate",
+												"eventType": "click",
+												"targetType": "ShelfItem",
+												"targetId": "pl.132b9a231cbf464086b4f838b2726f94",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								}
+							},
+							"accessibilityLabel": "New in Alternative",
+							"subtitleLinks": [
+								{
+									"title": "Apple Music Alternative",
+									"segue": {
+										"$kind": "flowAction",
+										"destination": {
+											"kind": "catalogItemDetailPage",
+											"contentDescriptor": {
+												"kind": "appleCurator",
+												"identifiers": {
+													"storeAdamID": "976439526"
+												},
+												"url": "https://music.apple.com/us/curator/apple-music-alternative/976439526"
+											},
+											"prominentItemIdentifier": null
+										},
+										"actionMetrics": {
+											"data": [
+												{
+													"fields": {
+														"actionDetails": {
+															"kind": "appleCurator"
+														},
+														"actionUrl": "https://music.apple.com/us/curator/apple-music-alternative/976439526",
+														"actionType": "navigate",
+														"eventType": "click",
+														"targetType": "link",
+														"targetId": "976439526",
+														"eventVersion": 5
+													},
+													"includingFields": [
+														"pageFields",
+														"languages"
+													],
+													"excludingFields": [],
+													"topic": "xp_its_music_main",
+													"shouldFlush": false
+												}
+											],
+											"custom": {}
+										}
+									}
+								}
+							],
+							"playAction": {
+								"$kind": "playAction",
+								"actionMetrics": {
+									"data": [
+										{
+											"fields": {
+												"actionDetails": {
+													"kind": "playlist"
+												},
+												"actionUrl": "https://music.apple.com/us/playlist/new-in-alternative/pl.132b9a231cbf464086b4f838b2726f94",
+												"actionType": "play",
+												"eventType": "click",
+												"targetType": "button",
+												"targetId": "pl.132b9a231cbf464086b4f838b2726f94",
+												"eventVersion": 5
+											},
+											"includingFields": [
+												"pageFields",
+												"languages"
+											],
+											"excludingFields": [],
+											"topic": "xp_its_music_main",
+											"shouldFlush": false
+										}
+									],
+									"custom": {}
+								},
+								"items": [
+									{
+										"contentDescriptor": {
+											"kind": "playlist",
+											"identifiers": {
+												"storeAdamID": "pl.132b9a231cbf464086b4f838b2726f94"
+											},
+											"url": "https://music.apple.com/us/playlist/new-in-alternative/pl.132b9a231cbf464086b4f838b2726f94"
+										}
+									}
+								],
+								"groupingIdentifier": null
+							},
+							"numberOfSocialBadges": 3,
+							"showExplicitBadge": false,
+							"isAOD": false
+						}
+					],
+					"header": {
+						"kind": "default",
+						"item": {
+							"titleLink": {
+								"title": "Featured On",
+								"segue": null
+							}
+						}
+					},
+					"displaySeparator": false,
+					"backgroundTreatment": "alternate"
+				}
+			],
+			"invalidationRules": {
+				"eventTriggers": [
+					{
+						"events": [
+							{
+								"name": "subscriptionStatusChange"
+							},
+							{
+								"name": "restrictionsDidChange"
+							}
+						],
+						"intent": {
+							"$kind": "RefreshPageIntent",
+							"intent": {
+								"$kind": "AlbumDetailPageIntent",
+								"contentDescriptor": {
+									"kind": "album",
+									"identifiers": {
+										"storeAdamID": "1736201082"
+									},
+									"url": "https://music.apple.com/us/album/lapse/1736201082",
+									"locale": {
+										"storefront": "us",
+										"language": null
+									}
+								},
+								"prominentItemIdentifier": null
+							},
+							"reason": "Subscription Status Changed"
+						}
+					}
+				]
+			},
+			"canonicalURL": "https://music.apple.com/us/album/lapse/1736201082",
+			"seoData": {
+				"url": "https://music.apple.com/us/album/lapse/1736201082",
+				"noIndex": false,
+				"noFollow": false,
+				"keywords": "listen, Lapse, Idaho, music, singles, songs, Alternative, streaming music, apple music",
+				"siteName": "Apple Music - Web Player",
+				"pageTitle": "Lapse - Album by Idaho - Apple Music",
+				"description": "Listen to Lapse by Idaho on Apple Music. 2024. 10 Songs. Duration: 31 minutes.",
+				"fileType": "jpg",
+				"artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+				"crop": "bf",
+				"height": 1200,
+				"width": 1200,
+				"appleStoreId": "1108187390",
+				"appleStoreName": "Apple Music",
+				"appleContentId": "1736201082",
+				"appleTitle": "Lapse",
+				"appleDescription": "Listen to Lapse by Idaho on Apple Music. 2024. 10 Songs. Duration: 31 minutes.",
+				"socialDescription": "Album · 2024 · 10 Songs",
+				"socialTitle": "Lapse by Idaho on Apple Music",
+				"ogType": "music.album",
+				"twitterSite": "@AppleMusic",
+				"twitterCardType": "summary",
+				"twitterWidth": 600,
+				"twitterHeight": 600,
+				"twitterCropCode": "bf",
+				"showOrgData": false,
+				"oembedData": {
+					"url": "https://music.apple.com/us/album/lapse/1736201082",
+					"title": "Lapse by Idaho on Apple Music"
+				},
+				"artistUrls": [
+					"https://music.apple.com/us/artist/idaho/26095177"
+				],
+				"musicReleaseDate": "2024-05-31T00:00:00.000Z",
+				"songsCount": 10,
+				"quality": 60,
+				"ogSongs": [
+					{
+						"id": "1736201085",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201085?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 212736,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201085&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201085&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 1,
+							"releaseDate": "2024-05-31",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423901",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"url": "https://music.apple.com/us/album/kamikaze/1736201082?i=1736201085",
+							"playParams": {
+								"id": "1736201085",
+								"kind": "song"
+							},
+							"hasLyrics": false,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "Kamikaze",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/e4/13/4be4139c-3243-b9f2-8e7f-9c299b47a0c1/mzaf_17991403165214852519.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/f0/fe/a5/f0fea5e1-577d-3994-f393-8afd2202f586/mzaf_4980108384900777349.plus.aac.a.m4p?accessKey=1719761497_8974806641660169557_IrKw5yTdkHbSMtP%2FXrwFPZm492Nh5L6qhrgq3yBV6uGuTbVpnHA1vva90M%2BJmgO8bQ7Gb3Td%2Fm2xNL5JEtWTFDaKY3VEmATO0ZWTnrVcTP2AQ69Ptlk%2F3EZtrSanj2WgKtYq%2FuZ6P3Vv3aVZ3%2BmzPOL7KetS78A4boCdnWSIoPlj83O6QmGQjOI4CHD7z%2F%2Fk",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/f0/fe/a5/f0fea5e1-577d-3994-f393-8afd2202f586/mzaf_803579795792158938.lw.aac.a.m4p?accessKey=1719761497_7508599314361681642_uNK0hKllsdZIwVVky2HwKDSLOx1HJBrExJR6dlt0YPg6fVLx%2B7n8svtJO5Prbrdij6pu49BEKxUWWovGpfS8GkIZhxCuudEI66HuR3EZdqoiVXg82h1iT2vJh%2FZAEffMjy%2BPXCL%2BKJgm0g4PjflWCPJL7a5c2ZuPzv%2F9J3yEo%2BhiK9ArHQaNItEQ17lAj%2FwQ",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/f0/fe/a5/f0fea5e1-577d-3994-f393-8afd2202f586/mzaf_1735809350669222776.slw.aac.a.m4p?accessKey=1719761497_6475453065234048814_%2BDLVetlu5UBrm5Y5m6YYVQWLa5Wv3%2FddN%2FS7rVvQPfxrNZM0fArdK%2Bgu9%2B%2BqRCFkcIJuMIN%2Fb0Kx46WevymwtKlmWFrsUhK0cWmqalhZpuwCgrF6k%2BB%2BKTiyNyOQEi9MvdiSIXFnWehWdqDJyHa4FcMN1CjSdhojf1hf%2FTDwAQyQnfBL4FYq4gUAVSzwxRLA",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/f0/fe/a5/f0fea5e1-577d-3994-f393-8afd2202f586/mzaf_3598254917593498.lwhq.aac.a.m4p?accessKey=1719761497_3264522889522369721_H9p0bCaeTBle5P6BPdupIc4JAFMtv35G77ju7FOQE%2B1lOQoCl2Q4LCKlOoeJeee%2B7NFtIqZ4VHMBjzBqWlGf%2FGo%2BvpFWeJBo7xjHd2giC%2FJpPmJVyXbFdDFHQqueXXT9O2Lf98cmZG1DYP79n7OATwRmtYtZyDuWfUV7b4WrVGXaZD%2BFRO%2Btm06OOrY798YA",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic211/v4/57/37/a6/5737a643-dae7-a5c6-39b8-f35f1602e5bc/P838013837_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201085/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201085/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201085/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201277",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201277?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 190731,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201277&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201277&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": true,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 2,
+							"releaseDate": "2024-04-09",
+							"isVocalAttenuationAllowed": true,
+							"isrc": "CAAA12423902",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"playParams": {
+								"id": "1736201277",
+								"kind": "song"
+							},
+							"url": "https://music.apple.com/us/album/on-fire/1736201082?i=1736201277",
+							"hasLyrics": true,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "On Fire",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/9d/f2/679df2c6-6b92-89b3-2418-43f32641bbf2/mzaf_1923535211362055730.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/12/dd/6c/12dd6cd8-09d6-027b-618d-070b12dfe82a/mzaf_16267639994253935062.plus.aac.a.m4p?accessKey=1719761497_4147502051464905076_zgKSuP%2BkV3ri6YLVtRDlfYbA7PsNEcBWU%2FTcKS1kMPMBVU%2BoayoIZCbNkS1DHkfLhNv2sEulyI3%2FXKpjxj1JXzL%2FRlyJM3DOuj5F7k%2BfjPp1uevp0nnLHO1kBWlQH63WBKbHGQroc8zsWnxSPKfQjVwxyRWPzWIC6QzRzVUnaFCJ%2F5j37zhyHBXaJHpN28vo",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/12/dd/6c/12dd6cd8-09d6-027b-618d-070b12dfe82a/mzaf_16493998373032376688.lw.aac.a.m4p?accessKey=1719761497_320480276741209089_fQQ%2F8Doun9Rc4716QVwxULUkeHlbtmxyIG8zGSrsg%2FM5UDbxMpe1CKEAizetxAXVbsdUoLiyeWjvFo%2FXbvttOngJn0pSkdqxsT0zv1C1E5M32eHuYsoQcDqcnjNntyPxCXZxDVkaGK4KeX8cJOCl4oUkI6JGymRF%2FH%2F814knxd3ym85NxIwpmEImDKhYJRJn",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/12/dd/6c/12dd6cd8-09d6-027b-618d-070b12dfe82a/mzaf_3505924081411024240.slw.aac.a.m4p?accessKey=1719761497_6580794195649165724_mqK%2FN3d8%2B%2FyAmWEWMKDbf9QvS%2FGOBvE7lPMxlFznFWr%2FfvYQJ75MIKfpfED56T6sWQvUaLwkjNMBZAJ9%2FImYx4RHR0FBo9qnoU6bZkZ8rbrklrmg07MHySbcmzQrb1Pva1CmSv3uyqxA72C%2BshG0AnKP3lmsJYIXvlwMHTrVDPo3qWZ3UwGQ06EOM91ji2T8",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/12/dd/6c/12dd6cd8-09d6-027b-618d-070b12dfe82a/mzaf_5457632070060742329.lwhq.aac.a.m4p?accessKey=1719761497_5487631803186540520_VXZV1m66gV6QKUukkG%2Bx%2FeAulHtdMzZmpVkpMrgZ%2FDMFSbWXrz6bnc%2B4unxMNjJK8WTncX9Npjx9UPmqiEI1eDLO%2FHurXr2wyXunS1x2ySy82zNaOgQbOsmdrLyISra19mSa8hpBx4IPQrM16J1tsXivw%2Br0DD0TgplMK0K2kz0G8%2BRQYlEpWK6XwZjCmnU5",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic211/v4/4f/06/2c/4f062c6a-5c54-210f-78a4-0c8eb358a068/P838013834_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201277/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201277/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201277/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201282",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201282?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 198394,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201282&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201282&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 3,
+							"releaseDate": "2024-05-31",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423903",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"url": "https://music.apple.com/us/album/west-side/1736201082?i=1736201282",
+							"playParams": {
+								"id": "1736201282",
+								"kind": "song"
+							},
+							"hasLyrics": false,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "West Side",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/93/33/da9333bd-c519-ac4f-3403-bd736fd72955/mzaf_14832757051127476475.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/2d/96/d8/2d96d894-dd40-e298-8a78-046ea5ebdc59/mzaf_12459966230998628061.plus.aac.a.m4p?accessKey=1719761497_7643368556310871117_n36JHfbqB9rM3Uwyg5FNOSlFof3DPfS0jJkso6Acmev%2FBduJgVzqVxX3qB9hiEEfx5uP4%2BQGaF8IcWzQQhmclfqcMsCEuBYnkOLy0rFkM%2Fd9V7migEdPKlHSlVjS5Cdx3hEnkYhzIPZ4geSBvcR4QBk5KXiqmFsEEfU5blZmh9DCMpv14GptAn5KjSQ6dCcp",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/2d/96/d8/2d96d894-dd40-e298-8a78-046ea5ebdc59/mzaf_16352860897483607849.lw.aac.a.m4p?accessKey=1719761497_352599760284782238_eGlAw7zNg8a7FiTc7t%2Bf0WPVwHAu3EuHFpOSB%2FZMBk5dywDa8goEQtjX9ygdZ5oulJEyGtqaMxviKvg0zNErI9ELaMWIUWv0Q8sohQlxM%2F%2FKJ8MDZruQVcDCnHXScvJe7FOcEqclSuR7SF%2F55G9AO8SWKbOBcVq33skDBPhgwo77%2F5scopbAKsC9YdoXy5U0",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/2d/96/d8/2d96d894-dd40-e298-8a78-046ea5ebdc59/mzaf_10449459693009751677.slw.aac.a.m4p?accessKey=1719761497_2763233810011311988_sro0wZgSkxyBwPANy9d6I%2B2ml%2FIHDcwTWlGsAYLmdKRdxdOOkmKoADn7UI%2BKqMJe8VeLpLO51OXT6vg%2B9unSkqGGjaSVZaTV0Vikly3%2F3GnrYjR4ojVoGcs8IENqvuQaJBLumFVQSUUT8Op1FMrIUneYf2yB3xLRzkoFJUSSZCVsRiiLeJ77z2MUfNmpxkKi",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/2d/96/d8/2d96d894-dd40-e298-8a78-046ea5ebdc59/mzaf_8124229473362923036.lwhq.aac.a.m4p?accessKey=1719761497_4498409514239001369_UalRgtAZtVvQl%2FNh4AQf5eaku1%2FRxs38tpGDcNLG8dEuem5BlMWOXJsXCw%2BTe1ytrOeodywCAwX1aq7P8H2N8C9JZlOlneZ71TXwSmPPWHH7sUn4GNfT%2BDpwm3IxN4Q%2F2pHvlhHhYGmVWQVlQChFaCrFQ9gGmDJ%2BfZ8KhSCs%2Fnb4w5U4SVOXQyB0bxGTBvul",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic221/v4/ff/19/c3/ff19c3be-8f6c-5f2d-7eb6-eb0cca2cf431/P838013796_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201282/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201282/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201282/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201291",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201291?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 151431,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201291&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201291&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 4,
+							"releaseDate": "2024-05-31",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423904",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"url": "https://music.apple.com/us/album/heaven-on-earth/1736201082?i=1736201291",
+							"playParams": {
+								"id": "1736201291",
+								"kind": "song"
+							},
+							"hasLyrics": false,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "Heaven On Earth",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/ea/38/9fea38d9-01b5-1fa9-1fbb-b8aafb2a9fc0/mzaf_15866245208087002513.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/47/f4/f8/47f4f8d1-d59a-afd3-c763-0c25aad92af4/mzaf_2609258099678493955.plus.aac.a.m4p?accessKey=1719761497_8904692502700971115_nAFTpLMRHaWx9nPcOB8xd8rNYFrUYxTPBzUEJ4wIxCV%2BbUQidCwp618IwsT8%2BN7wchZU8Xx2ku5On6LUytHa1Nq6%2BbQeofcsopeQ%2BSAM%2F3uiMun1xhsiApBqGf6IaSyZhQNpfNO99UHM46rPamtVgSFtv3kePjVWJ6MXwidQFRlHUK7E5sM7HIjVcuFDKlfr",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/47/f4/f8/47f4f8d1-d59a-afd3-c763-0c25aad92af4/mzaf_978590071083785922.lw.aac.a.m4p?accessKey=1719761497_6506690660792053132_s8793JxGKHDjz2o86ZBzLkcalSBBr76%2Bqp1Q29fKtojwmSqz2LIibL4MpoxQ9MkGHsiJThLFOxlFeXzCozFRu1u1zJl%2FMX78J1KOsRHlaRzUXBqReOciUKE4YvNZiJ76PI%2FZUH5uRZEuGPucJo9rku%2B2zm03TU1chtVSrephzs4pRBPeW%2FslB3EKUT79knHY",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/47/f4/f8/47f4f8d1-d59a-afd3-c763-0c25aad92af4/mzaf_11910855928147964485.slw.aac.a.m4p?accessKey=1719761497_8874910107780420832_dNjNtRxGaiP767wx9lg6yxqQbP3h51VF%2Bn6M3Yvqadrg%2F1BLmpLO74rVVQqZpzn9iK%2BA8sPVubzjKAftd9U2xYUW6IIVkbwnEiy5VncT5dd%2FPWjvmDOdZhFmKoYqg2tzLX%2B2QGM5TJxUvk%2FbbT%2FRvf5oN5KE5cwTCFh83rAhVmvCHMvlUpzSkInkwG5OwH3D",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/47/f4/f8/47f4f8d1-d59a-afd3-c763-0c25aad92af4/mzaf_7115707950396548084.lwhq.aac.a.m4p?accessKey=1719761497_4261776903369418692_iNdb8v1jFQOoUfj9fqnKu%2BFFylhs51flYiOc0175y1QXkK%2Bcxisfyig1Qz%2BaDuAGeW6BWsWqOHjP9duimuN7WXa4WW6Q4jQydEUf6QIHGO9v3aMNylC6I%2FpoPISa5bJeRCMl2Zr9jsKoi2ahL%2FyFVdu%2B3HmrMxtWIMLdfkNUKuJMTfwv5qie4UGtaoAB3nHb",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic211/v4/62/f9/94/62f994ac-6779-9ea8-d422-90a31c018362/P838013804_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201291/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201291/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201291/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201294",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201294?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 159859,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201294&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201294&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 5,
+							"releaseDate": "2024-05-31",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423905",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"url": "https://music.apple.com/us/album/heat-seek/1736201082?i=1736201294",
+							"playParams": {
+								"id": "1736201294",
+								"kind": "song"
+							},
+							"hasLyrics": false,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "Heat Seek",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/23/e2/ce23e2ba-ac3d-b557-3cc0-68dd5dc4af84/mzaf_15271821649058382615.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/40/cc/0c/40cc0cc6-8354-d091-f50c-59a512601525/mzaf_9495297134440810819.plus.aac.a.m4p?accessKey=1719761497_1570123054961352412_tb3rJicvfaOJgiGmLRGqHmzzQ1i089CjZv6KVZBXEqhqgdBwP%2FgPzfxqcZzu1KPPS8yX%2F7wST70s9A%2BGsENptUKoT0%2BHcjw3XSn1MlTpH3rBP9NoL0IX%2F8qDzErkyK9qPX4UWDv%2BNWWHnUuAnCUN7HmvhuKCSo0lE9IO%2FLy44%2BzILwnFUbW9gEJJTcqFup9%2F",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/40/cc/0c/40cc0cc6-8354-d091-f50c-59a512601525/mzaf_2832453306730605639.lw.aac.a.m4p?accessKey=1719761497_6652499049034370853_1B6wxMKeT4GLOS7UWSQIS%2BmA92VLPcYdYIs%2BOmhMifCS8t1MLB5zinokS3D4S9nJSheXsBgx5%2BxJ%2B3pmsUWSKYpI05ZDZSrN40tcRj4ZmBuLWUw7ZfLdzJ%2FUTqrHHcM%2BzVdu6I9Dgq1uiWSbKOrOjGIwYDNAlXyEvnR%2FV4bTE7GeUxUo8lZjQ0mgdndkCql7",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/40/cc/0c/40cc0cc6-8354-d091-f50c-59a512601525/mzaf_4311414563313027596.slw.aac.a.m4p?accessKey=1719761497_4186272301687001493_HP4c%2FuBZJMagSc%2F3S4M5vMc8e9PSH4Iu8FwuJ3VHFE38oi%2FrMwPfFs1dvW6Jxncv8sd3ThLpORQOo8ESqmC9v0%2FF5nRAcaG30x1c%2FsdyjWLXos7oSDzZAINvBWRMsV2ss0D9r0DXB3P6m9B0pZnf%2BhY1cbQaj5zYuWlvdpv72igbmBjJ4P50xI3CTH36H%2B5O",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/40/cc/0c/40cc0cc6-8354-d091-f50c-59a512601525/mzaf_3743519410035610155.lwhq.aac.a.m4p?accessKey=1719761497_3001003200281282658_Z1c%2B7hMTBnwOtzOFJ1uXG8UFuAs%2B4qWlXqNnmnbQDJb%2FK3mS3rs4eiT70gZolCWBmTu9ibdCnm1Fe4lh7RPYi0XkB2GD8hKlQDoDycTq9%2Fi6LarK8DlP%2Fuk4g9zdgehsFyhHWpB6M5QP%2FSS1p%2FMtH1zG5drNDTkegCvsBpQythDk%2Bbxw9G3vl4OjziX2X8kY",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic221/v4/12/24/f3/1224f324-0ba7-249b-6036-267c3ccb67f4/P838013803_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201294/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201294/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201294/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201296",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201296?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 247818,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201296&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201296&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 6,
+							"releaseDate": "2024-05-31",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423906",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"url": "https://music.apple.com/us/album/somehow/1736201082?i=1736201296",
+							"playParams": {
+								"id": "1736201296",
+								"kind": "song"
+							},
+							"hasLyrics": false,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "Somehow",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/e6/08/33e60837-57ff-7142-692b-ea1ba12124dd/mzaf_5049896131772184096.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/b2/ba/e7/b2bae7ba-b6ac-9f91-5838-9dd9046934a1/mzaf_13781896429781547476.plus.aac.a.m4p?accessKey=1719761497_5083497525019906804_Ta7YDhpuFVsDAMRndsLxEr5%2BM4vBV4waEYic%2BHyVt9PT4XLSh4GRUTmhUqaZMIyPrh1ZXcBIh0ePeYQiAhQhm1FXHAJMqA2IMRt8KV38AGZAhKsEgtnTdL%2FE5fP%2Bwhf3B4TNSuwuCTl4PbaSDaQBONf1PAU0QPUeQCYZJCT1tRk%2FqtzXpfaAw724kSLRDgJb",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/b2/ba/e7/b2bae7ba-b6ac-9f91-5838-9dd9046934a1/mzaf_8932061382739237598.lw.aac.a.m4p?accessKey=1719761497_4481125338690774160_bx3Lh6uAcn9bQGMA8raeUkwipBnhOTNf%2FT4zqGlfVIag%2BcVkJJxsnfhmAujNCWFT6bxPPrJUJaSTRGaclhXwS2rNy8ZM0kRg5gfdp%2BvIkC4ir7nW3f9DGYoTDykdSn2PoKowMlkh8pRceTsHC5KdlN8Is18R4bBL0mtDtXe6dH8g1%2FlAsVdehPA5NDsMTHkE",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/b2/ba/e7/b2bae7ba-b6ac-9f91-5838-9dd9046934a1/mzaf_9346243802815401532.slw.aac.a.m4p?accessKey=1719761497_2665954535029838637_ZkcTLzOnxAMoJ8j%2BBensVz4g0SKOFF48AwWzD%2BG7fy7EGWd4UMTXhq%2Bo6Tf4wrvqlPrbp5cdJknS3%2FVcAPbUN4xeSzTCp9TOKEbJRo4rrDRrfIKELOJpd72BsV1kkGtCnmaH5Y7ECzG6ZxUubJGlt%2BerskunvDgiIVHUVmNiVjl16MsdpZdu6wdp3WM1h4t1",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/b2/ba/e7/b2bae7ba-b6ac-9f91-5838-9dd9046934a1/mzaf_4177131978832715140.lwhq.aac.a.m4p?accessKey=1719761497_607530603738266124_1%2FoMhxRe1NxQWBONTCAQnxeZJ%2BhbIP1MLZgr%2BaRmLNVb1SlGcoRtKKv76Zc6Q2c8tmTmHHxgXeXv2G%2FaRA5Z%2FpfPtvKQknnNd2aOOy2vNXhRH5gUAOgMEwhExYtdh%2BtISRnkwNkRiPIUZ3Lo%2BLHyRhEYMatQoCdwCeqavR8Dx6Y2iL3xp%2FxGutwgy7zaUn8E",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic221/v4/0a/37/23/0a372357-18ed-4394-13ff-5c7f1bd06201/P838013836_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201296/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201296/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201296/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201417",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201417?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 213925,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201417&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201417&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 7,
+							"releaseDate": "2024-05-21",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423907",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"playParams": {
+								"id": "1736201417",
+								"kind": "song"
+							},
+							"url": "https://music.apple.com/us/album/snakes/1736201082?i=1736201417",
+							"hasLyrics": true,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "Snakes",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/00/52/7c005246-29e3-aeb0-88c3-1ec8009f246a/mzaf_2420859988102636441.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/0e/57/f6/0e57f678-757d-e1b5-322c-3a92a9e2b767/mzaf_9259667162235688085.plus.aac.a.m4p?accessKey=1719761497_6742424360912983349_puW5H%2B6TtIHe1lY3vHNZyYqc9IxlNreLAv5UNQrYIEViPWrVLH5vrJKjzLfk4HUaQr6TC4sdsmOpQcko%2BZnc%2FaKqN2rwhT2MK7xoT9L1Bm%2BQuq3VVHjtOAxz1Ufa2zxD0y00uiKDe5LLt3ZvsS1%2BsVg66KX7HraV2pB6il7tgV168FpOeI1BtY80iRxiSujg",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/0e/57/f6/0e57f678-757d-e1b5-322c-3a92a9e2b767/mzaf_6863520794197900518.lw.aac.a.m4p?accessKey=1719761497_1894335747963235020_MQ47yAEAkdPfNT10fN1B0%2BCJw5%2BqnkgyNEnxZPqtO1I2PXAHo9ZuuL0LmU09Lm%2BWbmpQIJpLzTzyiUAwlpSS5WtuhrK4qmJ2PBL%2FvkkDBHX5ynfEtc45rNHJilXf%2BFfcQhXLz136KLgfqyxALJokURymU3Bp4jTsPYdcgOUaRFcydef0HSkCCNw0vAbDUKST",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/0e/57/f6/0e57f678-757d-e1b5-322c-3a92a9e2b767/mzaf_823936728777592756.slw.aac.a.m4p?accessKey=1719761497_1952516814469758419_%2B0t72RwUT%2BlXq9A6mbzKhiTG%2Facg9RjrP28WiZd%2BkxHzHgAKmmfKZAzdezvq91ii9Z0bckoh0aAPmuIkIsiYBELK62On7rn48HMvWOvW0Qq%2FyvLbJn%2BkjSWOLqhuQllVuDMiG%2FV%2F%2FVBCOz6g7TzH1tg8VavjYtiiLxH8Z8%2BCyjdTsEM9iVFccir9vSLJxyA3",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music211/v4/0e/57/f6/0e57f678-757d-e1b5-322c-3a92a9e2b767/mzaf_11179736247586102584.lwhq.aac.a.m4p?accessKey=1719761497_6129871701199893972_mY1M3gqDulA%2BMNtzTTx6cZ%2By%2BkE5YR%2BL6qWiA8xy1N%2F7kGDLg8EFF1ZTFplOGN5DmuQhxYkmuWdwdR5gLceFrCnrpCObyArC3yMSYeslDuL8xfaf3dIbPIFHfmHeL10IDNofwVGXoMGQIWTv1xiMwSgW3Vt2yJRd3dO3E169G9govXNAzdUpJzs2jxikyxM1",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic122/v4/32/08/38/32083894-b6ca-509f-7ff8-839b0a44dc46/P838013654_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201417/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201417/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201417/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201422",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201422?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 172165,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201422&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201422&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 8,
+							"releaseDate": "2024-04-30",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423908",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"url": "https://music.apple.com/us/album/across-the-sky/1736201082?i=1736201422",
+							"playParams": {
+								"id": "1736201422",
+								"kind": "song"
+							},
+							"hasLyrics": true,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "Across The Sky",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/da/29/f6da2979-af58-dc13-03cd-ec6bd4d98f57/mzaf_17172154670592906602.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/be/78/5d/be785d22-114c-e12b-57e6-b081529a2954/mzaf_9559429597825485611.plus.aac.a.m4p?accessKey=1719761497_3715316987863106046_BUmO1UBu3A5XeG4Uoo7BK8t%2BdyW%2BTKWrnDWE1JUNCv%2FyEN3L24sZ7706f4QkXQLWcOgr7HbC9R37Mj9moxCVk9bZ57ypyObB2YZO7SHnXA59AIpOhGqr1zi41diRHqM8qhiwxLEgrM774HIODTAkIE3uK%2BQipFYBUaJHKJHBmK8%2FRQ%2FvKj%2BWaI%2FoqySIG%2BM%2F",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/be/78/5d/be785d22-114c-e12b-57e6-b081529a2954/mzaf_7243434131848652732.lw.aac.a.m4p?accessKey=1719761497_4454909576014041805_uieh31HsiHi0BMYPoe%2B6c05s9Pn4Mq3exQ7DQKwObKEMlXveeNzr2S4ci0MxtA2mQC52HYsczhEmP%2B4KlWwVAufhSX4Kc4zAHdnyV2DpgzM5Lcxdij9uuStHOeY81Wj%2BFkVVE2r%2FzfH%2FQLBiVVgJWsMH5dkMR%2BCo5%2B%2FsDZ872xHnaultDHr823r%2BPENw0Kyy",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/be/78/5d/be785d22-114c-e12b-57e6-b081529a2954/mzaf_1744183046442083339.slw.aac.a.m4p?accessKey=1719761497_8380256970659736587_R6rvSX6Xe3qEmDUP73kDVErA1tZ%2B9F6vL4O5qv5XNCT0vMYoajHxNY04raLucJh5%2F029%2F%2FRbxiBcd6N5H7Ovh0iYEypbIglf2%2FmZ6O6UP7feAdm776pKraj15P3XtjdrrYOCVJesktyxyvZTmTwnU2HNgk5k6VNaOdaR1lojOJy547fmOe%2Fwz2ktDL1gLx5L",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music221/v4/be/78/5d/be785d22-114c-e12b-57e6-b081529a2954/mzaf_16725720918076098632.lwhq.aac.a.m4p?accessKey=1719761497_1112650038380980677_X453pdvXFQjeZ4p5QhkFFCUdY6vQJ6yfl732sVijJiQJvjQAUNS6K36cEHP7bfK1yz%2F7OZxQjIECmhfH%2BT6e1a2mveefUWPasbFwKOKGu4WLq9OIFUmCl6qdBXuGYF2Xeay0w78B6jZeXH1i4SjdjBKw4RjCkfCrXm3yYxU43oLVewiY1PnpOK8H9VK8rixW",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic112/v4/f3/88/29/f388292f-4dc5-a6f0-4515-604a058fabb8/P838013869_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201422/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201422/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201422/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201442",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201442?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 249490,
+							"isMasteredForItunes": true,
+							"audioLocale": "en-US",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201442&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201442&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 9,
+							"releaseDate": "2024-05-31",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423909",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"playParams": {
+								"id": "1736201442",
+								"kind": "song"
+							},
+							"url": "https://music.apple.com/us/album/throw-the-game/1736201082?i=1736201442",
+							"hasLyrics": false,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "Throw The Game",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/3e/2b/543e2b31-7e98-83c2-5055-5086c45d59d1/mzaf_6061840756441649358.plus.aac.ep.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/f2/fd/c2/f2fdc2a5-0f25-cbbf-fe5c-db5f515e2e29/mzaf_7985710149440977318.plus.aac.a.m4p?accessKey=1719761497_4545338029982180528_jaSdTvrh1XB3xpV0SnUwN7en4u5S0Aw97B0dqThCpPdOUKTM8daI2rBKhFCpdevTamTk%2BOGQaf8HgiK2VYQ3tnT61%2BhcjmHS%2FljUMpooPMOpiwEa0zbCbmytOe0lRg7FxFnl3IvK6mPMkc64ybphOj5kCu2P3%2F%2FOkWTy7UjMEs8HTxpxXwVHSwRKXxfsyB%2F9",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/f2/fd/c2/f2fdc2a5-0f25-cbbf-fe5c-db5f515e2e29/mzaf_14170507990917462501.lw.aac.a.m4p?accessKey=1719761497_4345697554186336240_hFwHTW6I3%2BIdJmlASRmIHOjMmzPD0lX5l4O8tHBSuoW86FkyZKHIudWBtxCinzCfOGNd6qKlE9kpPRP4Uuk%2BGne%2FYleP4VRZuL%2FOPeDJ%2FfzY8fE73kpvwvufc2rKXnOJY69ej5euTjh8b0VdFTJrIqxaFLg2oNFz09D00ESZ6zaAT3e24mrnXpKR65HjRq0M",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/f2/fd/c2/f2fdc2a5-0f25-cbbf-fe5c-db5f515e2e29/mzaf_14019587920502067629.slw.aac.a.m4p?accessKey=1719761497_7363342759317550545_vctW2QiEuyo2yDUGcGeKqcWrTjbcS5nmq9YlsU4MrtWyHFf1Cg66hpw0tM6W2ZgKo8FGOsvDJkbwglXhCsluxCqcW1iFHbJTimCFvT9kHuuZRqpy28%2Bugiy5Q84qHW1iO9LfK%2FVpY3O3ODNtLd6JtVaWaoJVWgUwl40zlhdjt%2Ft87mvjc3rGJsAKRaWyNBiv",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music112/v4/f2/fd/c2/f2fdc2a5-0f25-cbbf-fe5c-db5f515e2e29/mzaf_12701789602599171191.lwhq.aac.a.m4p?accessKey=1719761497_8876712323513736822_572%2F2KMMtuUx6Rp3hfkPdTH1cP%2FCqA8JWWBkmZRj9PEhNhggGwdoiK5N6nX4jmsElLBEhr4dVe%2F7n%2FuZBI2xz%2BKX1fucYPDENrp0BkvEs6QHD%2BDXpVATbNEvamBIFuEuYJR4OzUokCYyMyCfKGQw%2F9i%2BnD7UJmYSbfudaX%2BKKMbHIlhnzT%2F%2Bpz8Fo%2BmoSv2f",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic221/v4/d1/da/13/d1da1351-fa35-424d-c330-6d7097b71205/P838013868_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201442/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201442/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201442/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					},
+					{
+						"id": "1736201443",
+						"type": "songs",
+						"href": "/v1/catalog/us/songs/1736201443?l=en-US",
+						"attributes": {
+							"albumName": "Lapse",
+							"durationInMillis": 79169,
+							"isMasteredForItunes": true,
+							"audioLocale": "zxx",
+							"discNumber": 1,
+							"hasCredits": false,
+							"offers": [
+								{
+									"buyParams": "productType=S&price=1290&salableAdamId=1736201443&pricingParameters=PLUS&pg=default",
+									"type": "buy",
+									"priceFormatted": "$1.29",
+									"price": 1.29
+								},
+								{
+									"buyParams": "productType=S&price=0&salableAdamId=1736201443&pricingParameters=SUBS&pg=default",
+									"type": "subscription",
+									"priceFormatted": "$0.00",
+									"price": 0
+								}
+							],
+							"hasTimeSyncedLyrics": false,
+							"genreNames": [
+								"Alternative",
+								"Music"
+							],
+							"trackNumber": 10,
+							"releaseDate": "2024-05-31",
+							"isVocalAttenuationAllowed": false,
+							"isrc": "CAAA12423910",
+							"artwork": {
+								"width": 3000,
+								"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/{w}x{h}bb.{f}",
+								"height": 3000,
+								"textColor3": "d1d0d0",
+								"textColor2": "dcdcdc",
+								"textColor4": "b5b4b5",
+								"textColor1": "ffffff",
+								"bgColor": "1b1718",
+								"hasP3": false
+							},
+							"composerName": "Jeff Martin & Robbie Fronzo",
+							"url": "https://music.apple.com/us/album/29-palms/1736201082?i=1736201443",
+							"playParams": {
+								"id": "1736201443",
+								"kind": "song"
+							},
+							"hasLyrics": false,
+							"isAppleDigitalMaster": true,
+							"audioTraits": [
+								"hi-res-lossless",
+								"lossless",
+								"lossy-stereo"
+							],
+							"editorialArtwork": {},
+							"name": "29 Palms",
+							"previews": [
+								{
+									"url": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/a2/08/58a208e4-0f46-e059-4a34-0480e0796570/mzaf_6100464820510907427.plus.aac.p.m4a"
+								}
+							],
+							"artistName": "Idaho",
+							"extendedAssetUrls": {
+								"plus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music122/v4/aa/dc/4d/aadc4dbf-c86b-4eeb-9ec1-620e7ba09170/mzaf_14199646071666361664.plus.aac.a.m4p?accessKey=1719761497_1365963247571799141_6H%2F2nsM%2FS0OW3Gp4Lz7edCEs5h9%2Ft2RP4qJHh2tHIu%2B0hCwiBu4ek26eYxI8nk5hWFSFnTtPjdzFVqzAp3KGw57rEva5p6kkQUVZ8RfMy5J09iZtH8tnI2iA2uxDdFLA0ttI590az%2FpJ%2B2wX1VD1Pb8bDyhQJL6gmZzKAAwCLxb88MADBIf78%2B7w59Bnq%2Br5",
+								"lightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music122/v4/aa/dc/4d/aadc4dbf-c86b-4eeb-9ec1-620e7ba09170/mzaf_11357783631797904678.lw.aac.a.m4p?accessKey=1719761497_8088062652741754414_1fIkSR09eR3sifsd%2FO52yK4hH%2FpQPJ3CCs7d7XJCjVu4QJMP3glQ0Znto4qoeY8qGsoNIUo64bprfx95ZQUZ1Wa%2FTXVxi7OsLmk8SRNzlgWXHBMfSKEGoSeIWwl2m%2BZGmssZ%2FUdk0vR9yHe759A%2F01fT%2FbYpJ70O33zjz9p%2Bf74YrCT6sKDDxYnfAm%2F5mU9l",
+								"superLightweight": "https://streamingaudio.itunes.apple.com/itunes-assets/Music122/v4/aa/dc/4d/aadc4dbf-c86b-4eeb-9ec1-620e7ba09170/mzaf_6224494008947171070.slw.aac.a.m4p?accessKey=1719761497_4245783419148074353_%2FEagbu7GN7zllSqOg8YqY%2BZ0SSsFBHfySFvPXzuXYqo%2BuAXnBEFRriclESiApQLGTUATX%2B5v6hI7dD7uiViHrXPoQYiZuq9gc4jik7%2BD2ndtqbhrl83LG5qd0tIw6PQc0yDAcGvygNNRb19Ye%2BRkzFpej6q%2BL%2FFzd8r0EdKGLkBwkEPGQDyMhKXocv5BqwpU",
+								"lightweightPlus": "https://streamingaudio.itunes.apple.com/itunes-assets/Music122/v4/aa/dc/4d/aadc4dbf-c86b-4eeb-9ec1-620e7ba09170/mzaf_1814619812975155221.lwhq.aac.a.m4p?accessKey=1719761497_2174964861008383901_c7OfX%2FSAdn7ijqoweB4fhCZx%2FE90SQ1%2FdWv34AqyLqcS3hLkl2ViAHY3dgcg7m9mFYnSOxi%2F12CVdQjn5rfo9KDhx80ln8k7HnQVJQKLqSAt0SgX%2BH%2FQbCINrCgMIHi5ozdouJddWaPDaCQ0o5O%2FieanLmmLvME%2FkwH%2F7UX81084Lcb%2BCIqJl5m25DtyMcpY",
+								"enhancedHls": "https://aod.itunes.apple.com/itunes-assets/HLSMusic221/v4/d5/65/06/d56506f7-7e9f-1a7a-2795-11ce1541e604/P838013802_lossless.m3u8"
+							}
+						},
+						"relationships": {
+							"albums": {
+								"href": "/v1/catalog/us/songs/1736201443/albums?l=en-US",
+								"data": [
+									{
+										"id": "1736201082",
+										"type": "albums",
+										"href": "/v1/catalog/us/albums/1736201082?l=en-US"
+									}
+								]
+							},
+							"artists": {
+								"href": "/v1/catalog/us/songs/1736201443/artists?l=en-US",
+								"data": [
+									{
+										"id": "26095177",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/26095177?l=en-US"
+									}
+								]
+							},
+							"composers": {
+								"href": "/v1/catalog/us/songs/1736201443/composers?l=en-US",
+								"data": [
+									{
+										"id": "146624715",
+										"type": "artists",
+										"href": "/v1/catalog/us/artists/146624715?l=en-US"
+									}
+								]
+							}
+						},
+						"meta": {
+							"contentVersion": {
+								"MZ_INDEXER": 0,
+								"RTCI": 0
+							}
+						}
+					}
+				],
+				"schemaName": "schema:music-album",
+				"schemaContent": {
+					"@context": "http://schema.org",
+					"@type": "MusicAlbum",
+					"name": "Lapse",
+					"description": "Listen to Lapse by Idaho on Apple Music. 2024. 10 Songs. Duration: 31 minutes.",
+					"citation": [],
+					"tracks": [
+						{
+							"@type": "MusicRecording",
+							"name": "Kamikaze",
+							"duration": "PT3M32S",
+							"url": "https://music.apple.com/us/song/kamikaze/1736201085",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/kamikaze/1736201085"
+									}
+								},
+								"name": "Kamikaze",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/e4/13/4be4139c-3243-b9f2-8e7f-9c299b47a0c1/mzaf_17991403165214852519.plus.aac.ep.m4a",
+								"duration": "PT3M32S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "On Fire",
+							"duration": "PT3M10S",
+							"url": "https://music.apple.com/us/song/on-fire/1736201277",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/on-fire/1736201277"
+									}
+								},
+								"name": "On Fire",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/9d/f2/679df2c6-6b92-89b3-2418-43f32641bbf2/mzaf_1923535211362055730.plus.aac.ep.m4a",
+								"duration": "PT3M10S",
+								"uploadDate": "2024-04-09",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "West Side",
+							"duration": "PT3M18S",
+							"url": "https://music.apple.com/us/song/west-side/1736201282",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/west-side/1736201282"
+									}
+								},
+								"name": "West Side",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/93/33/da9333bd-c519-ac4f-3403-bd736fd72955/mzaf_14832757051127476475.plus.aac.ep.m4a",
+								"duration": "PT3M18S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Heaven On Earth",
+							"duration": "PT2M31S",
+							"url": "https://music.apple.com/us/song/heaven-on-earth/1736201291",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/heaven-on-earth/1736201291"
+									}
+								},
+								"name": "Heaven On Earth",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/ea/38/9fea38d9-01b5-1fa9-1fbb-b8aafb2a9fc0/mzaf_15866245208087002513.plus.aac.ep.m4a",
+								"duration": "PT2M31S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Heat Seek",
+							"duration": "PT2M39S",
+							"url": "https://music.apple.com/us/song/heat-seek/1736201294",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/heat-seek/1736201294"
+									}
+								},
+								"name": "Heat Seek",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/23/e2/ce23e2ba-ac3d-b557-3cc0-68dd5dc4af84/mzaf_15271821649058382615.plus.aac.ep.m4a",
+								"duration": "PT2M39S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Somehow",
+							"duration": "PT4M7S",
+							"url": "https://music.apple.com/us/song/somehow/1736201296",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/somehow/1736201296"
+									}
+								},
+								"name": "Somehow",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/e6/08/33e60837-57ff-7142-692b-ea1ba12124dd/mzaf_5049896131772184096.plus.aac.ep.m4a",
+								"duration": "PT4M7S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Snakes",
+							"duration": "PT3M33S",
+							"url": "https://music.apple.com/us/song/snakes/1736201417",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/snakes/1736201417"
+									}
+								},
+								"name": "Snakes",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/00/52/7c005246-29e3-aeb0-88c3-1ec8009f246a/mzaf_2420859988102636441.plus.aac.ep.m4a",
+								"duration": "PT3M33S",
+								"uploadDate": "2024-05-21",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Across The Sky",
+							"duration": "PT2M52S",
+							"url": "https://music.apple.com/us/song/across-the-sky/1736201422",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/across-the-sky/1736201422"
+									}
+								},
+								"name": "Across The Sky",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/da/29/f6da2979-af58-dc13-03cd-ec6bd4d98f57/mzaf_17172154670592906602.plus.aac.ep.m4a",
+								"duration": "PT2M52S",
+								"uploadDate": "2024-04-30",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Throw The Game",
+							"duration": "PT4M9S",
+							"url": "https://music.apple.com/us/song/throw-the-game/1736201442",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/throw-the-game/1736201442"
+									}
+								},
+								"name": "Throw The Game",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/3e/2b/543e2b31-7e98-83c2-5055-5086c45d59d1/mzaf_6061840756441649358.plus.aac.ep.m4a",
+								"duration": "PT4M9S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "29 Palms",
+							"duration": "PT1M19S",
+							"url": "https://music.apple.com/us/song/29-palms/1736201443",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/29-palms/1736201443"
+									}
+								},
+								"name": "29 Palms",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/a2/08/58a208e4-0f46-e059-4a34-0480e0796570/mzaf_6100464820510907427.plus.aac.p.m4a",
+								"duration": "PT1M19S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						}
+					],
+					"workExample": [
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.jeeautyc.tif/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/hearts-of-palm/80874318",
+							"name": "Hearts of Palm"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/14/3f/32/143f32a4-f788-d041-23a2-ec09092d1d7d/mzi.krdskwyd.tif/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/the-lone-gunman/80874870",
+							"name": "The Lone Gunman"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.hlsttwdd.tif/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/levitate/80874620",
+							"name": "Levitate"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music/89/39/ca/mzi.mqwryics.tif/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/the-forbidden-ep-alas-special-edition/274727917",
+							"name": "The Forbidden EP - Alas: Special Edition"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/0d/08/92/0d0892bb-228d-e3a4-beb4-5b5080069832/20UMGIM13423.rgb.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/three-sheets-to-the-wind/1513029992",
+							"name": "Three Sheets To The Wind"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/e9/c1/d6/e9c1d626-32b8-0dbc-c52f-dae817769371/20UMGIM13751.rgb.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/year-after-year/1513018448",
+							"name": "Year After Year"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/8e/26/e8/8e26e861-6931-c1e4-247a-a0d083ab57ff/20UMGIM13747.rgb.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/this-way-out/1513024373",
+							"name": "This Way Out"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.mqkdntdt.tif/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/we-were-young-and-needed-the-money/80874766",
+							"name": "We Were Young and Needed the Money"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music/y2005/m09/d20/h15/mzi.azmmkywq.tif/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/people-like-us-should-be-stopped-live-vol-1/80874191",
+							"name": "People Like Us Should Be Stopped - Live Vol. 1"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/13/8f/88/138f88ed-8c19-270b-2882-b317336e455a/724101759321.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/you-were-a-dick/1607419202",
+							"name": "You Were a Dick"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/fc/3c/1f/fc3c1fb8-268e-eb73-8fb0-3b6c2f532fc4/20UMGIM13421.rgb.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/the-palms-ep/1513011481",
+							"name": "The Palms EP"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/76/b4/93/76b493cd-3566-89c0-3260-f1a1bc5d23c7/5059505673894_cover.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/strandet-i-paradis-feat-idaho-dj-ash-single/1506728360",
+							"name": "Strandet i Paradis (feat. Idaho & DJ Ash) - Single"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1f/95/e9/1f95e915-c63c-63cc-63da-df455ba977ef/8425953001607.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/milenium-single/1608215468",
+							"name": "Milenium - Single"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/81/41/d3/8141d36d-529f-e135-b83c-d5c549ce9223/0885014626992.png/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/nettle-antidote-feat-landon-george-ben-paulson-alma/1160664005",
+							"name": "Nettle Antidote (feat. Landon George, Ben Paulson, Alma Russ, Haakon Oyen & Idaho) - EP"
+						},
+						{
+							"@type": "MusicAlbum",
+							"image": "https://is1-ssl.mzstatic.com/image/thumb/Music4/v4/2e/bd/82/2ebd8286-0c52-82f2-7ba7-42d5c5c6fe58/888831499770.jpg/1200x1200bb.jpg",
+							"url": "https://music.apple.com/us/album/no-game-single/899999770",
+							"name": "No Game - Single"
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Kamikaze",
+							"duration": "PT3M32S",
+							"url": "https://music.apple.com/us/song/kamikaze/1736201085",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/kamikaze/1736201085"
+									}
+								},
+								"name": "Kamikaze",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4b/e4/13/4be4139c-3243-b9f2-8e7f-9c299b47a0c1/mzaf_17991403165214852519.plus.aac.ep.m4a",
+								"duration": "PT3M32S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "On Fire",
+							"duration": "PT3M10S",
+							"url": "https://music.apple.com/us/song/on-fire/1736201277",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/on-fire/1736201277"
+									}
+								},
+								"name": "On Fire",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/9d/f2/679df2c6-6b92-89b3-2418-43f32641bbf2/mzaf_1923535211362055730.plus.aac.ep.m4a",
+								"duration": "PT3M10S",
+								"uploadDate": "2024-04-09",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "West Side",
+							"duration": "PT3M18S",
+							"url": "https://music.apple.com/us/song/west-side/1736201282",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/west-side/1736201282"
+									}
+								},
+								"name": "West Side",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/93/33/da9333bd-c519-ac4f-3403-bd736fd72955/mzaf_14832757051127476475.plus.aac.ep.m4a",
+								"duration": "PT3M18S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Heaven On Earth",
+							"duration": "PT2M31S",
+							"url": "https://music.apple.com/us/song/heaven-on-earth/1736201291",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/heaven-on-earth/1736201291"
+									}
+								},
+								"name": "Heaven On Earth",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/ea/38/9fea38d9-01b5-1fa9-1fbb-b8aafb2a9fc0/mzaf_15866245208087002513.plus.aac.ep.m4a",
+								"duration": "PT2M31S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Heat Seek",
+							"duration": "PT2M39S",
+							"url": "https://music.apple.com/us/song/heat-seek/1736201294",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/heat-seek/1736201294"
+									}
+								},
+								"name": "Heat Seek",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/23/e2/ce23e2ba-ac3d-b557-3cc0-68dd5dc4af84/mzaf_15271821649058382615.plus.aac.ep.m4a",
+								"duration": "PT2M39S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Somehow",
+							"duration": "PT4M7S",
+							"url": "https://music.apple.com/us/song/somehow/1736201296",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/somehow/1736201296"
+									}
+								},
+								"name": "Somehow",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/e6/08/33e60837-57ff-7142-692b-ea1ba12124dd/mzaf_5049896131772184096.plus.aac.ep.m4a",
+								"duration": "PT4M7S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Snakes",
+							"duration": "PT3M33S",
+							"url": "https://music.apple.com/us/song/snakes/1736201417",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/snakes/1736201417"
+									}
+								},
+								"name": "Snakes",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/00/52/7c005246-29e3-aeb0-88c3-1ec8009f246a/mzaf_2420859988102636441.plus.aac.ep.m4a",
+								"duration": "PT3M33S",
+								"uploadDate": "2024-05-21",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Across The Sky",
+							"duration": "PT2M52S",
+							"url": "https://music.apple.com/us/song/across-the-sky/1736201422",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/across-the-sky/1736201422"
+									}
+								},
+								"name": "Across The Sky",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f6/da/29/f6da2979-af58-dc13-03cd-ec6bd4d98f57/mzaf_17172154670592906602.plus.aac.ep.m4a",
+								"duration": "PT2M52S",
+								"uploadDate": "2024-04-30",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "Throw The Game",
+							"duration": "PT4M9S",
+							"url": "https://music.apple.com/us/song/throw-the-game/1736201442",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/throw-the-game/1736201442"
+									}
+								},
+								"name": "Throw The Game",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/54/3e/2b/543e2b31-7e98-83c2-5055-5086c45d59d1/mzaf_6061840756441649358.plus.aac.ep.m4a",
+								"duration": "PT4M9S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						},
+						{
+							"@type": "MusicRecording",
+							"name": "29 Palms",
+							"duration": "PT1M19S",
+							"url": "https://music.apple.com/us/song/29-palms/1736201443",
+							"offers": {
+								"@type": "Offer",
+								"category": "free",
+								"price": 0
+							},
+							"audio": {
+								"@type": "AudioObject",
+								"potentialAction": {
+									"@type": "ListenAction",
+									"expectsAcceptanceOf": {
+										"@type": "Offer",
+										"category": "free"
+									},
+									"target": {
+										"@type": "EntryPoint",
+										"actionPlatform": "https://music.apple.com/us/song/29-palms/1736201443"
+									}
+								},
+								"name": "29 Palms",
+								"contentUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/58/a2/08/58a208e4-0f46-e059-4a34-0480e0796570/mzaf_6100464820510907427.plus.aac.p.m4a",
+								"duration": "PT1M19S",
+								"uploadDate": "2024-05-31",
+								"thumbnailUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg"
+							}
+						}
+					],
+					"url": "https://music.apple.com/us/album/lapse/1736201082",
+					"image": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/1200x1200bb.jpg",
+					"potentialAction": {
+						"@type": "ListenAction",
+						"expectsAcceptanceOf": {
+							"@type": "Offer",
+							"category": "free"
+						},
+						"target": {
+							"@type": "EntryPoint",
+							"actionPlatform": "https://music.apple.com/us/album/lapse/1736201082"
+						}
+					},
+					"genre": [
+						"Alternative",
+						"Music"
+					],
+					"datePublished": "2024-05-31",
+					"byArtist": [
+						{
+							"@type": "MusicGroup",
+							"url": "https://music.apple.com/us/artist/idaho/26095177",
+							"name": "Idaho"
+						}
+					]
+				}
+			}
+		}
+	}
+]

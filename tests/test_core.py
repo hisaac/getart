@@ -6,7 +6,6 @@ import httpx
 
 from getart.core import ArtworkAssets, fetch_artwork_assets
 
-
 FIXTURES = Path(__file__).parent / "data"
 
 
@@ -16,7 +15,7 @@ def load_fixture(name: str) -> str:
 
 def test_fetch_artwork_assets_with_video() -> None:
     page_url = "https://music.apple.com/album/example-album"
-    json_payload = load_fixture("test-json-with-video-only-used-data.json")
+    json_payload = load_fixture("test-json-with-video.json")
     html = f"<html><body><div id='serialized-server-data'>{json_payload}</div></body></html>"
 
     master_manifest = """#EXTM3U
@@ -30,13 +29,17 @@ P837475808_variant.m3u8
     def handler(request: httpx.Request) -> httpx.Response:  # type: ignore[override]
         if request.url == httpx.URL(page_url):
             return httpx.Response(200, text=html, headers={"Content-Type": "text/html"})
-        if request.url.host == "mvod.itunes.apple.com" and request.url.path.endswith("default.m3u8"):
+        if request.url.host == "mvod.itunes.apple.com" and request.url.path.endswith(
+            "default.m3u8"
+        ):
             return httpx.Response(
                 200,
                 text=master_manifest,
                 headers={"Content-Type": "application/vnd.apple.mpegurl"},
             )
-        if request.url.host == "mvod.itunes.apple.com" and request.url.path.endswith("variant.m3u8"):
+        if request.url.host == "mvod.itunes.apple.com" and request.url.path.endswith(
+            "variant.m3u8"
+        ):
             return httpx.Response(
                 200,
                 text=variant_manifest,
@@ -48,8 +51,8 @@ P837475808_variant.m3u8
     assets: ArtworkAssets = fetch_artwork_assets(page_url, transport=transport)
 
     assert assets.image_url == (
-        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/"
-        "c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/3000x3000bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/17/cb/e5/"
+        "17cbe588-a6c3-d5eb-94d8-ed1aa53e1d5e/196871846042.jpg/4000x4000bb.jpg"
     )
     assert (
         assets.video_url
@@ -60,7 +63,7 @@ P837475808_variant.m3u8
 
 def test_fetch_artwork_assets_without_video() -> None:
     page_url = "https://music.apple.com/album/example-without-video"
-    json_payload = load_fixture("test-json-no-video-only-used-data.json")
+    json_payload = load_fixture("test-json-no-video.json")
     html = f"<html><body><div id='serialized-server-data'>{json_payload}</div></body></html>"
 
     def handler(request: httpx.Request) -> httpx.Response:  # type: ignore[override]
