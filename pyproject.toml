@@ -4,7 +4,7 @@ version = "2.0.0"
 description = "Fetch high-quality Apple Music album artwork and motion artwork assets."
 readme = "README.md"
 requires-python = ">=3.14"
-authors = [{ name = "getart contributors" }]
+authors = [{ name = "Isaac Halvorson" }]
 dependencies = [
     "beautifulsoup4",
     "httpx",

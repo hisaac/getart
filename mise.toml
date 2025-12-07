@@ -16,7 +16,10 @@ uv = "latest"
 postinstall = "mise run bootstrap"
 
 [tasks.bootstrap]
-run = "uv sync"
+run = [
+	"uv --version",
+	"uv sync",
+]
 
 [tasks.deps-upgrade]
 run = "uv sync --upgrade"
