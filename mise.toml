@@ -1,9 +1,19 @@
 [settings]
+activate_aggressive = true
 experimental = true
 not_found_auto_install = true
-activate_aggressive = true
+python.uv_venv_auto = true
+
+[env]
+UV_CACHE_DIR = "{{cwd}}/.uv-cache"
+PYTHONPATH = "src"
 
 [tools]
-# swift = "latest"
-usage = "latest"
-xcbeautify = 'latest'
+python = { version = "latest", uv = true }
+uv = "latest"
+
+[tasks.bootstrap]
+run = "uv sync"
+
+[tasks.deps-upgrade]
+run = "uv sync --upgrade"

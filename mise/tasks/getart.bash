@@ -4,4 +4,4 @@
 
 set -euo pipefail
 
-swift run getart "$usage_url" | xcbeautify
+PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$(pwd)/src" uv run python -m getart.cli "$usage_url"

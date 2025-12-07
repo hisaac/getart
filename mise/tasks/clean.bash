@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-#MISE description="Clean the project"
+#MISE description="Remove build artifacts"
 
 set -euxo pipefail
 
-killall -q Xcode || true
-swift package clean
-rm -rf .build
-rm -rf DerivedData
-rm -rf Package.resolved
+rm -rf .pytest_cache
+rm -rf build dist
+rm -rf *.egg-info
+find . -name '__pycache__' -type d -prune -exec rm -rf {} +

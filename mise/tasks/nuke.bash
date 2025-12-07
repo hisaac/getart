@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-#MISE description="Nuke the project and global caches"
+#MISE description="Nuke build artifacts and Python caches"
 #MISE depends=["clean"]
 
 set -euxo pipefail
 
-rm -rf ~/Library/Developer/Xcode/DerivedData
-rm -rf ~/Library/Caches/org.swift.swiftpm
-rm -rf ~/Library/Preferences/org.swift.swiftpm.plist
+rm -rf .venv
+uv cache prune

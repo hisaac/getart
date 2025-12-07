@@ -1,0 +1,22 @@
+[project]
+name = "getart"
+version = "0.1.1"
+description = "Fetch high-quality Apple Music album artwork and motion artwork assets."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "getart contributors" }]
+dependencies = [
+    "beautifulsoup4>=4.12,<5",
+    "httpx>=0.27,<0.28",
+]
+
+[project.scripts]
+getart = "getart.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+]
+
+[tool.uv]
+package = true

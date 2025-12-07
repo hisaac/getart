@@ -3,4 +3,4 @@
 
 set -euo pipefail
 
-swift test | xcbeautify
+PYTHONPATH="${PYTHONPATH:+${PYTHONPATH}:}$(pwd)/src" uv run pytest
