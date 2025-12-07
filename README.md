@@ -5,7 +5,7 @@ A small Python CLI that extracts the highest quality album art and motion artwor
 ## Prerequisites
 
 1. [Install `mise`](https://mise.jdx.dev/installing-mise.html).
-2. From the project root, run `mise install` to provision `uv` and a Python 3.11 runtime managed by `uv`.
+2. From the project root, run `mise install` to provision `uv` and a Python 3.14 runtime (or later) managed by `uv`.
 
 `uv run` automatically creates an isolated environment the first time it executes, so no additional setup is required.
 
