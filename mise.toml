@@ -1,9 +1,52 @@
 [settings]
-experimental = true
-not_found_auto_install = true
 activate_aggressive = true
+experimental = true
+python.uv_venv_auto = true
+
+[env]
+UV_CACHE_DIR = "{{cwd}}/.uv-cache"
+PYTHONPATH = "src"
 
 [tools]
-# swift = "latest"
-usage = "latest"
-xcbeautify = 'latest'
+python = { version = "latest", uv = true }
+uv = "latest"
+
+[hooks]
+preinstall = "mise plugins update"
+postinstall = "mise run bootstrap"
+
+[tasks.bootstrap]
+run = [
+	"uv --version",
+	"uv sync",
+]
+
+[tasks.deps-upgrade]
+run = "uv sync --upgrade"
+
+[tasks.run]
+alias = "getart"
+usage = 'arg "<url>" help="The Apple Music URL to get the artwork for"'
+run = 'uv run python -m getart.cli "${usage_url}"'
+
+[tasks.build]
+run = "uv build"
+
+[tasks.test]
+run = "uv run pytest"
+
+[tasks.clean]
+run = [
+	"rm -rf dist",
+	"rm -rf build",
+	"rm -rf *.egg-info",
+	"rm -rf .pytest_cache",
+	"find . -name '__pycache__' -type d -prune -exec rm -rf {} +",
+]
+
+[tasks.nuke]
+depends = ["clean"]
+run = [
+	"rm -rf .venv",
+	"uv cache prune",
+]
