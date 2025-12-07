@@ -1,7 +1,6 @@
 [settings]
 activate_aggressive = true
 experimental = true
-not_found_auto_install = true
 python.uv_venv_auto = true
 
 [env]
@@ -13,6 +12,7 @@ python = { version = "latest", uv = true }
 uv = "latest"
 
 [hooks]
+preinstall = "mise plugins update"
 postinstall = "mise run bootstrap"
 
 [tasks.bootstrap]
