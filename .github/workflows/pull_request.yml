@@ -5,6 +5,7 @@ concurrency:
   cancel-in-progress: true
 env:
   MISE_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG && 1 || 0 }}
+  # temporary workaround for issues with mise's uv venv auto-activation on Linux runners
   MISE_PYTHON_UV_VENV_AUTO: false
 jobs:
   test:
