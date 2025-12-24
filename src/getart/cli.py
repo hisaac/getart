@@ -48,6 +48,7 @@ def normalize_url(candidate: str) -> str:
         return normalized.geturl()
     return candidate
 
+
 def _open_asset(asset_url: str) -> None:
     try:
         webbrowser.open(asset_url)
@@ -69,7 +70,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     normalized_url = normalize_url(args.url)
 
     try:
-        assets: ArtworkAssets = fetch_artwork_assets(normalized_url, timeout=args.timeout)
+        assets: ArtworkAssets = fetch_artwork_assets(
+            normalized_url, timeout=args.timeout
+        )
     except GetArtError as exc:
         print(str(exc), file=sys.stderr)
         return 2
