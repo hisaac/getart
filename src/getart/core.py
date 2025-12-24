@@ -264,15 +264,6 @@ def _sanitize_filename(name: str) -> str:
     return name
 
 
-def _get_extension_from_url(url: str) -> str:
-    """Extract file extension from URL."""
-    if url.endswith(".mp4"):
-        return "mp4"
-    elif url.endswith(".jpg") or ".jpg/" in url:
-        return "jpg"
-    return "bin"
-
-
 def generate_filename(
     artist_name: Optional[str],
     album_name: Optional[str],
