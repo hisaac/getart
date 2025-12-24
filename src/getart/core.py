@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Any, Iterable, Optional
 from urllib.parse import urljoin
 
@@ -35,6 +36,8 @@ class ServerDataNotFoundError(GetArtError):
 class ArtworkAssets:
     image_url: Optional[str] = None
     video_url: Optional[str] = None
+    artist_name: Optional[str] = None
+    album_name: Optional[str] = None
 
 
 @dataclass
@@ -105,6 +108,38 @@ class ServerData:
                 video = motion_detail.get("video")
                 if isinstance(video, str):
                     return video
+        return None
+
+    def artist_name(self) -> Optional[str]:
+        for section in self._iter_sections():
+            items = section.get("items")
+            if not isinstance(items, list):
+                continue
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                subtitle_links = item.get("subtitleLinks")
+                if not isinstance(subtitle_links, list) or not subtitle_links:
+                    continue
+                first_link = subtitle_links[0]
+                if not isinstance(first_link, dict):
+                    continue
+                title = first_link.get("title")
+                if isinstance(title, str):
+                    return title
+        return None
+
+    def album_name(self) -> Optional[str]:
+        for section in self._iter_sections():
+            items = section.get("items")
+            if not isinstance(items, list):
+                continue
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                title = item.get("title")
+                if isinstance(title, str):
+                    return title
         return None
 
 
@@ -181,7 +216,14 @@ def fetch_artwork_assets(
         playlist_url = server_data.video_playlist_url()
         if playlist_url:
             video_url = client.resolve_video_url(playlist_url)
-        return ArtworkAssets(image_url=image_url, video_url=video_url)
+        artist_name = server_data.artist_name()
+        album_name = server_data.album_name()
+        return ArtworkAssets(
+            image_url=image_url,
+            video_url=video_url,
+            artist_name=artist_name,
+            album_name=album_name,
+        )
 
 
 def _extract_mp4_url(manifest: str, base_url: str) -> Optional[str]:
@@ -209,3 +251,86 @@ def _extract_playlist_urls(manifest: str, base_url: str) -> Iterable[str]:
             continue
         if line.endswith(".m3u8"):
             yield urljoin(base_url, line)
+
+
+def _sanitize_filename(name: str) -> str:
+    """Sanitize a string to be used as a filename."""
+    # Replace invalid filename characters with underscores
+    invalid_chars = '<>:"/\\|?*'
+    for char in invalid_chars:
+        name = name.replace(char, "_")
+    # Remove leading/trailing whitespace and dots
+    name = name.strip().strip(".")
+    return name
+
+
+def _get_extension_from_url(url: str) -> str:
+    """Extract file extension from URL."""
+    if url.endswith(".mp4"):
+        return "mp4"
+    elif url.endswith(".jpg") or ".jpg/" in url:
+        return "jpg"
+    return "bin"
+
+
+def generate_filename(
+    artist_name: Optional[str],
+    album_name: Optional[str],
+    asset_type: str,
+    extension: str,
+) -> str:
+    """Generate a filename for downloaded artwork.
+    
+    Args:
+        artist_name: The artist name (if available)
+        album_name: The album name (if available)
+        asset_type: Type of asset (e.g., 'image', 'video')
+        extension: File extension (e.g., 'jpg', 'mp4')
+    
+    Returns:
+        A sanitized filename
+    """
+    if artist_name and album_name:
+        base = f"{_sanitize_filename(artist_name)} - {_sanitize_filename(album_name)}"
+    elif album_name:
+        base = _sanitize_filename(album_name)
+    elif artist_name:
+        base = _sanitize_filename(artist_name)
+    else:
+        base = f"artwork_{asset_type}"
+    
+    # Add suffix for video to distinguish from image
+    if asset_type == "video":
+        return f"{base}_video.{extension}"
+    return f"{base}.{extension}"
+
+
+def download_file(
+    url: str,
+    output_path: Path,
+    *,
+    timeout: float = 30.0,
+    chunk_size: int = 8192,
+) -> None:
+    """Download a file from a URL to the specified path.
+    
+    Args:
+        url: The URL to download from
+        output_path: The path where the file should be saved
+        timeout: Network timeout in seconds
+        chunk_size: Size of chunks to read/write
+    
+    Raises:
+        GetArtError: If download fails
+    """
+    try:
+        with httpx.Client(timeout=timeout, follow_redirects=True) as client:
+            with client.stream("GET", url) as response:
+                response.raise_for_status()
+                with open(output_path, "wb") as f:
+                    for chunk in response.iter_bytes(chunk_size=chunk_size):
+                        f.write(chunk)
+    except HTTPError as exc:
+        raise GetArtError(f"Failed to download file from {url}: {exc}") from exc
+    except OSError as exc:
+        raise GetArtError(f"Failed to write file to {output_path}: {exc}") from exc

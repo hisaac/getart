@@ -59,6 +59,8 @@ P837475808_variant.m3u8
         == "https://mvod.itunes.apple.com/itunes-assets/HLSVideo221/v4/41/85/ad/"
         "4185ad71-e897-fe37-6193-a7dc7abb13f0/P837475808_Anull_video_gr698_sdr_2160x2160-.mp4"
     )
+    assert assets.artist_name == "Willie Nelson"
+    assert assets.album_name == "The Border"
 
 
 def test_fetch_artwork_assets_without_video() -> None:
