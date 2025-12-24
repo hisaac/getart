@@ -16,14 +16,14 @@ A small Python CLI that extracts the highest quality album art and motion artwor
 $ mise run <apple-music-url>
 
 # Or call the CLI module directly with uv (make sure the src/ directory is on PYTHONPATH)
-$ PYTHONPATH=src uv run python -m getart.cli <apple-music-url> [--no-open] [--timeout <seconds>]
+$ PYTHONPATH=src uv run python -m getart.cli <apple-music-url>
 
 # Optional: install a console script into uv's tool cache
 $ uv tool install --from . getart
 $ getart <apple-music-url>
 ```
 
-The command prints any discovered artwork URLs and, by default, opens them in your default browser/player. Use `--no-open` to skip launching the assets, or change the network timeout with `--timeout`.
+The command prints any discovered artwork URLs and opens them in your default browser/player.
 
 ## Development
 
