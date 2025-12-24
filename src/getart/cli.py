@@ -20,17 +20,6 @@ def build_parser() -> argparse.ArgumentParser:
         description="Fetch high-quality Apple Music artwork and motion assets."
     )
     parser.add_argument("url", help="Apple Music URL to inspect.")
-    parser.add_argument(
-        "--timeout",
-        type=float,
-        default=10.0,
-        help="Network timeout in seconds (default: 10).",
-    )
-    parser.add_argument(
-        "--no-open",
-        action="store_true",
-        help="Do not open discovered assets in the default browser.",
-    )
     return parser
 
 
@@ -70,9 +59,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     normalized_url = normalize_url(args.url)
 
     try:
-        assets: ArtworkAssets = fetch_artwork_assets(
-            normalized_url, timeout=args.timeout
-        )
+        assets: ArtworkAssets = fetch_artwork_assets(normalized_url)
     except GetArtError as exc:
         print(str(exc), file=sys.stderr)
         return 2
@@ -87,8 +74,7 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     for label, asset_url in output.items():
         print(f"{label} URL: {asset_url}")
-        if not args.no_open:
-            _open_asset(asset_url)
+        _open_asset(asset_url)
 
     return 0
 
