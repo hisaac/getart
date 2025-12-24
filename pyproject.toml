@@ -16,8 +16,6 @@ getart = "getart.cli:main"
 [dependency-groups]
 dev = [
   "pytest",
-  "ruff",
-  "ruff_format",
   "ty",
 ]
 
