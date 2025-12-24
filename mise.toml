@@ -14,6 +14,15 @@ yamllint = "latest"
 actionlint = "latest"
 tombi = "latest"
 yamlfmt = "latest"
+ruff = "latest"
+
+[tasks.check]
+alias = "lint"
+run = "hk check --all"
+
+[tasks.fix]
+alias = ["fmt", "format"]
+run = "hk fix --all"
 
 [tasks.bootstrap]
 run = ["hk install --mise", "uv sync"]

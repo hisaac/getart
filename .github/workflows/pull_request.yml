@@ -1,11 +1,13 @@
-name: Test
+name: Pull Request
 on: pull_request
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 env:
   MISE_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG && 1 || 0 }}
-  MISE_ENV: ci
+  # temporary workaround for issues with
+  # mise's uv venv auto-activation on Linux runners
+  MISE_PYTHON_UV_VENV_AUTO: false
 jobs:
   test:
     strategy:
@@ -19,4 +21,10 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: jdx/mise-action@v3
-      - run: mise run test
+      - uses: ./.github/actions/test
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: jdx/mise-action@v3
+      - uses: ./.github/actions/check

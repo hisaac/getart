@@ -1,0 +1,7 @@
+name: Test Action
+description: Run the test task
+runs:
+  using: composite
+  steps:
+    - run: mise run test
+      shell: bash
