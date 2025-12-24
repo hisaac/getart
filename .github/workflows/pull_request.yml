@@ -5,7 +5,7 @@ concurrency:
   cancel-in-progress: true
 env:
   MISE_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG && 1 || 0 }}
-  # MISE_ENV: ci
+  MISE_PYTHON_UV_VENV_AUTO: false
 jobs:
   test:
     strategy:
