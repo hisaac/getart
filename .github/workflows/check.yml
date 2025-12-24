@@ -1,0 +1,15 @@
+name: Check
+on: pull_request
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  MISE_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG && 1 || 0 }}
+  MISE_ENV: ci
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: jdx/mise-action@v3
+      - run: hk check --all
