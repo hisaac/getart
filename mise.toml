@@ -9,7 +9,7 @@ PYTHONPATH = "src"
 
 [tools]
 pkl = "latest"
-python = { version = "latest", uv = true }
+python = { version = "3.12", uv = true }
 uv = "latest"
 hk = "latest"
 yamllint = "latest"
