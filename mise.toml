@@ -1,25 +1,22 @@
 [settings]
 activate_aggressive = true
 experimental = true
-python.uv_venv_auto = true
 
-[env]
-UV_CACHE_DIR = "{{cwd}}/.uv-cache"
-PYTHONPATH = "src"
+[settings.python]
+uv_venv_auto = true
 
 [tools]
+pkl = "latest"
 python = { version = "latest", uv = true }
 uv = "latest"
-
-[hooks]
-preinstall = "mise plugins update"
-postinstall = "mise run bootstrap"
+hk = "latest"
+yamllint = "latest"
+actionlint = "latest"
+tombi = "latest"
+yamlfmt = "latest"
 
 [tasks.bootstrap]
-run = [
-	"uv --version",
-	"uv sync",
-]
+run = ["hk install --mise", "uv sync"]
 
 [tasks.deps-upgrade]
 run = "uv sync --upgrade"
@@ -37,16 +34,14 @@ run = "uv run pytest"
 
 [tasks.clean]
 run = [
-	"rm -rf dist",
-	"rm -rf build",
-	"rm -rf *.egg-info",
-	"rm -rf .pytest_cache",
-	"find . -name '__pycache__' -type d -prune -exec rm -rf {} +",
+  "rm -rf dist",
+  "rm -rf build",
+  "rm -rf .ruff_cache",
+  "rm -rf src/getart.egg-info",
+  "rm -rf .pytest_cache",
+  "find . -name '__pycache__' -type d -prune -exec rm -rf {} +",
 ]
 
 [tasks.nuke]
 depends = ["clean"]
-run = [
-	"rm -rf .venv",
-	"uv cache prune",
-]
+run = ["rm -rf .venv", "uv cache prune"]
