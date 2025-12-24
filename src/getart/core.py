@@ -97,7 +97,9 @@ class ServerData:
                 dictionary = video_artwork.get("dictionary")
                 if not isinstance(dictionary, dict):
                     continue
-                motion_detail = dictionary.get("motionDetailSquare") or dictionary.get("motionDetail")
+                motion_detail = dictionary.get("motionDetailSquare") or dictionary.get(
+                    "motionDetail"
+                )
                 if not isinstance(motion_detail, dict):
                     continue
                 video = motion_detail.get("video")
@@ -107,7 +109,9 @@ class ServerData:
 
 
 class AppleMusicClient:
-    def __init__(self, *, timeout: float = 10.0, transport: BaseTransport | None = None) -> None:
+    def __init__(
+        self, *, timeout: float = 10.0, transport: BaseTransport | None = None
+    ) -> None:
         self._client = httpx.Client(
             timeout=timeout,
             headers=DEFAULT_HEADERS,
@@ -134,10 +138,14 @@ class AppleMusicClient:
         soup = BeautifulSoup(html, "html.parser")
         element = soup.find(id="serialized-server-data")
         if element is None:
-            raise ServerDataNotFoundError("serialized-server-data element not present in HTML.")
+            raise ServerDataNotFoundError(
+                "serialized-server-data element not present in HTML."
+            )
         json_text = element.string or element.text
         if not json_text:
-            raise ServerDataNotFoundError("serialized-server-data element contained no JSON.")
+            raise ServerDataNotFoundError(
+                "serialized-server-data element contained no JSON."
+            )
         return ServerData.from_json(json_text)
 
     def resolve_video_url(self, playlist_url: str) -> Optional[str]:

@@ -1,13 +1,10 @@
----
 name: Test
-
 on: pull_request
-
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 env:
-  DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG }}
   MISE_DEBUG: ${{ secrets.ACTIONS_STEP_DEBUG && 1 || 0 }}
-  MISE_GITHUB_TOKEN: ${{ github.token }}
-
 jobs:
   test:
     strategy:
