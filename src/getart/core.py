@@ -254,13 +254,33 @@ def _extract_playlist_urls(manifest: str, base_url: str) -> Iterable[str]:
 
 
 def _sanitize_filename(name: str) -> str:
-    """Sanitize a string to be used as a filename."""
+    """Sanitize a string to be used as a filename.
+    
+    Removes or replaces characters that are invalid on common filesystems:
+    - Windows: < > : " / \\ | ? * and control characters (0-31)
+    - Unix/Linux: / and control characters (0-31)
+    - macOS: : and control characters (0-31)
+    """
     # Replace invalid filename characters with underscores
     invalid_chars = '<>:"/\\|?*'
     for char in invalid_chars:
         name = name.replace(char, "_")
+    
+    # Remove control characters (0-31)
+    name = ''.join(char for char in name if ord(char) >= 32)
+    
     # Remove leading/trailing whitespace and dots
     name = name.strip().strip(".")
+    
+    # Ensure the filename isn't empty after sanitization
+    if not name:
+        name = "untitled"
+    
+    # Limit length to 200 characters to be safe across filesystems
+    # (most filesystems support 255, but we want to leave room for extensions)
+    if len(name) > 200:
+        name = name[:200]
+    
     return name
 
 

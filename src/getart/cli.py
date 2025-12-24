@@ -73,10 +73,36 @@ def _open_asset(asset_url: str) -> None:
 
 def _get_extension_from_url(url: str) -> str:
     """Extract file extension from URL."""
+    # Check the last path segment for the extension
+    parsed = urlparse(url)
+    path = parsed.path
+    
+    # Get the last segment of the path
+    if path:
+        # Remove trailing slash
+        path = path.rstrip('/')
+        # Get the last part after the final slash
+        if '/' in path:
+            filename = path.split('/')[-1]
+        else:
+            filename = path
+        
+        # Check for common extensions
+        if filename.endswith('.mp4'):
+            return "mp4"
+        elif filename.endswith('.jpg') or filename.endswith('.jpeg'):
+            return "jpg"
+        elif filename.endswith('.png'):
+            return "png"
+    
+    # Fallback: check if URL ends with known extensions
     if url.endswith(".mp4"):
         return "mp4"
-    elif url.endswith(".jpg") or ".jpg/" in url:
+    elif url.endswith((".jpg", ".jpeg")):
         return "jpg"
+    elif url.endswith(".png"):
+        return "png"
+    
     return "bin"
 
 
