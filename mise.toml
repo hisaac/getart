@@ -16,6 +16,9 @@ tombi = "latest"
 yamlfmt = "latest"
 ruff = "latest"
 
+[env]
+PYTHONPATH = "src"
+
 [tasks.check]
 alias = "lint"
 run = "hk check --all"
