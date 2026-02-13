@@ -1,7 +1,0 @@
-name: Check Action
-description: Run the check task
-runs:
-  using: composite
-  steps:
-    - run: mise run check
-      shell: bash
