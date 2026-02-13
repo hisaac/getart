@@ -11,15 +11,15 @@ hk = "latest"
 pkl = "latest"
 python = { version = "latest", uv = true }
 ruff = "latest"
+shellcheck = "latest"
 tombi = "latest"
 uv = "latest"
 yamlfmt = "latest"
+shfmt = "latest"
 
 [hooks]
 postinstall = '''
-if [ "$CI" == "true" ]; then
-  mise run bootstrap-ci
-else
+if [ "$CI" != "true" ]; then
   mise run bootstrap
 fi
 '''
@@ -33,9 +33,6 @@ includes = ["scripts"]
 alias = "up"
 run = ["hk install --mise", { task = "update-hk-import" }, "uv sync"]
 
-[tasks.bootstrap-ci]
-run = ["uv sync"]
-
 [tasks.update]
 alias = ["upgrade", "upd", "upg"]
 run = ["mise upgrade", "uv sync --upgrade"]
@@ -46,9 +43,11 @@ usage = 'arg "<url>" help="The Apple Music URL to get the artwork for"'
 run = "uv run python -m getart.cli '{{ usage.url }}'"
 
 [tasks.build]
+alias = "b"
 run = "uv build"
 
 [tasks.test]
+alias = "t"
 run = "uv run pytest --verbose"
 
 [tasks.check]

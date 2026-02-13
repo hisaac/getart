@@ -7,11 +7,12 @@ __pycache__/
 .eggs/
 .pytest_cache/
 .ruff_cache/
-.venv
+.venv/
 *.egg
 *.egg-info/
 *.py[codz]
 *$py.class
+dist/
 eggs/
 
 # uv

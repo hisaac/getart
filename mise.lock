@@ -37,6 +37,14 @@ backend = "aqua:astral-sh/ruff"
 "platforms.macos-x64" = { checksum = "sha256:09fa6fe0d4172e1bb84cc6d937a0e1f42ff84c90b61163fff4f31c51a9c14879", url = "https://github.com/astral-sh/ruff/releases/download/0.15.0/ruff-x86_64-apple-darwin.tar.gz"}
 "platforms.windows-x64" = { checksum = "sha256:d1613f4231095d160ab4d3487bf56de23f29945888bcbe4521fcb0cb5e695d92", url = "https://github.com/astral-sh/ruff/releases/download/0.15.0/ruff-x86_64-pc-windows-msvc.zip"}
 
+[[tools.shellcheck]]
+version = "0.11.0"
+backend = "aqua:koalaman/shellcheck"
+
+[[tools.shfmt]]
+version = "3.12.0"
+backend = "aqua:mvdan/sh"
+
 [[tools.tombi]]
 version = "0.7.28"
 backend = "aqua:tombi-toml/tombi"

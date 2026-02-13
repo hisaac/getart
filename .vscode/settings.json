@@ -3,6 +3,8 @@
 		"getart",
 		"pycache",
 		"pytest",
+		"shellcheck",
+		"shfmt",
 		"tombi",
 		"venv"
 	]
