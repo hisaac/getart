@@ -1,5 +1,0 @@
-[settings.python]
-uv_venv_auto = false
-
-[env]
-_.python.venv = { path = ".venv", create = false }

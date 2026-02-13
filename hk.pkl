@@ -1,5 +1,5 @@
-amends "package://github.com/jdx/hk/releases/download/v1.27.0/hk@1.27.0#/Config.pkl"
-import "package://github.com/jdx/hk/releases/download/v1.27.0/hk@1.27.0#/Builtins.pkl"
+amends "package://github.com/jdx/hk/releases/download/v1.36.0/hk@1.36.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.36.0/hk@1.36.0#/Builtins.pkl"
 
 fail_fast = false
 env {
@@ -15,7 +15,6 @@ local linters = new Mapping<String, Step> {
 	["tombi_format"] = Builtins.tombi_format
 	["tombi"] = Builtins.tombi
 	["yamlfmt"] = Builtins.yamlfmt
-	["yamllint"] = Builtins.yamllint
 
 	// Generic linters
 	["fix-smart-quotes"] = Builtins.fix_smart_quotes
@@ -25,11 +24,11 @@ local linters = new Mapping<String, Step> {
 }
 
 hooks {
-	["fix"] {
-		fix = true
+	["check"] {
 		steps = linters
 	}
-	["check"] {
+	["fix"] {
+		fix = true
 		steps = linters
 	}
 	["pre-commit"] {

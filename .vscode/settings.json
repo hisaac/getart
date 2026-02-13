@@ -1,10 +1,9 @@
 {
 	"cSpell.words": [
 		"getart",
-		"killall",
-		"NSURL",
-		"swiftpm",
-		"xcodes",
-		"xcworkspacedata"
+		"pycache",
+		"pytest",
+		"tombi",
+		"venv"
 	]
 }
