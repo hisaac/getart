@@ -1,20 +1,54 @@
 [settings]
-activate_aggressive = true
 experimental = true
+lockfile = true
 
 [settings.python]
 uv_venv_auto = true
 
 [tools]
+actionlint = "latest"
+hk = "latest"
 pkl = "latest"
 python = { version = "latest", uv = true }
-uv = "latest"
-hk = "latest"
-yamllint = "latest"
-actionlint = "latest"
-tombi = "latest"
-yamlfmt = "latest"
 ruff = "latest"
+shellcheck = "latest"
+tombi = "latest"
+uv = "latest"
+yamlfmt = "latest"
+shfmt = "latest"
+
+[hooks]
+postinstall = '''
+if [ "$CI" != "true" ]; then
+  mise run bootstrap
+fi
+'''
+
+# Tasks
+
+[task_config]
+includes = ["scripts"]
+
+[tasks.bootstrap]
+alias = "up"
+run = ["hk install --mise", { task = "update-hk-import" }, "uv sync"]
+
+[tasks.update]
+alias = ["upgrade", "upd", "upg"]
+run = ["mise upgrade", "uv sync --upgrade"]
+
+[tasks.run]
+alias = ["getart", "r"]
+usage = 'arg "<url>" help="The Apple Music URL to get the artwork for"'
+run = "uv run python -m getart.cli '{{ usage.url }}'"
+
+[tasks.build]
+alias = "b"
+run = "uv build"
+
+[tasks.test]
+alias = "t"
+run = "uv run pytest --verbose"
 
 [tasks.check]
 alias = "lint"
@@ -23,23 +57,6 @@ run = "hk check --all"
 [tasks.fix]
 alias = ["fmt", "format"]
 run = "hk fix --all"
-
-[tasks.bootstrap]
-run = ["hk install --mise", "uv sync"]
-
-[tasks.deps-upgrade]
-run = "uv sync --upgrade"
-
-[tasks.run]
-alias = "getart"
-usage = 'arg "<url>" help="The Apple Music URL to get the artwork for"'
-run = 'uv run python -m getart.cli "${usage_url}"'
-
-[tasks.build]
-run = "uv build"
-
-[tasks.test]
-run = "uv run pytest"
 
 [tasks.clean]
 run = [
