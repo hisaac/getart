@@ -49,7 +49,7 @@ run = "uv run python -m getart.cli '{{ usage.url }}'"
 run = "uv build"
 
 [tasks.test]
-run = "uv run pytest"
+run = "uv run pytest --verbose"
 
 [tasks.check]
 alias = "lint"
