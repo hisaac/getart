@@ -5,7 +5,7 @@ from pathlib import Path
 from getart.core import ServerData
 
 
-FIXTURES = Path(__file__).parent / "data"
+FIXTURES = Path(__file__).parents[1] / "data"
 
 
 def load_fixture(name: str) -> str:
@@ -14,11 +14,11 @@ def load_fixture(name: str) -> str:
 
 def test_image_artwork_url() -> None:
     server_data = ServerData.from_json(
-        load_fixture("test-json-no-video-only-used-data.json")
+        load_fixture("test-json-with-video-only-used-data.json")
     )
     assert server_data.image_artwork_url() == (
-        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/9a/d0/"
-        "c59ad049-d5a4-8df2-8564-238472cf497a/24UMGIM28458.rgb.jpg/3000x3000bb.jpg"
+        "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/17/cb/e5/"
+        "17cbe588-a6c3-d5eb-94d8-ed1aa53e1d5e/196871846042.jpg/4000x4000bb.jpg"
     )
 
 

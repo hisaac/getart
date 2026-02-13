@@ -45,15 +45,21 @@ class ServerData:
     def from_json(cls, json_text: str) -> "ServerData":
         return cls(json.loads(json_text))
 
-    def _iter_sections(self) -> Iterable[dict[str, Any]]:
-        if not isinstance(self.json_object, list):
-            return []
-        for entry in self.json_object:
+    def _iter_data_roots(self) -> Iterable[dict[str, Any]]:
+        if not isinstance(self.json_object, dict):
+            return
+        top_level_data = self.json_object.get("data")
+        if not isinstance(top_level_data, list):
+            return
+        for entry in top_level_data:
             if not isinstance(entry, dict):
                 continue
-            data = entry.get("data")
-            if not isinstance(data, dict):
-                continue
+            nested_data = entry.get("data")
+            if isinstance(nested_data, dict):
+                yield nested_data
+
+    def _iter_sections(self) -> Iterable[dict[str, Any]]:
+        for data in self._iter_data_roots():
             sections = data.get("sections")
             if not isinstance(sections, list):
                 continue
@@ -63,24 +69,30 @@ class ServerData:
 
     def image_artwork_url(self) -> Optional[str]:
         for section in self._iter_sections():
-            container_art = section.get("containerArtwork")
-            if not isinstance(container_art, dict):
+            items = section.get("items")
+            if not isinstance(items, list):
                 continue
-            dictionary = container_art.get("dictionary")
-            if not isinstance(dictionary, dict):
-                continue
-            width = dictionary.get("width")
-            height = dictionary.get("height")
-            url_template = dictionary.get("url")
-            if not all(isinstance(value, int) for value in (width, height)):
-                continue
-            if not isinstance(url_template, str):
-                continue
-            return (
-                url_template.replace("{w}", str(width))
-                .replace("{h}", str(height))
-                .replace("{f}", "jpg")
-            )
+            for item in items:
+                if not isinstance(item, dict):
+                    continue
+                artwork = item.get("artwork")
+                if not isinstance(artwork, dict):
+                    continue
+                dictionary = artwork.get("dictionary")
+                if not isinstance(dictionary, dict):
+                    continue
+                width = dictionary.get("width")
+                height = dictionary.get("height")
+                url_template = dictionary.get("url")
+                if not all(isinstance(value, int) for value in (width, height)):
+                    continue
+                if not isinstance(url_template, str):
+                    continue
+                return (
+                    url_template.replace("{w}", str(width))
+                    .replace("{h}", str(height))
+                    .replace("{f}", "jpg")
+                )
         return None
 
     def video_playlist_url(self) -> Optional[str]:

@@ -18,6 +18,9 @@ $ mise run <apple-music-url>
 # Or call the CLI module directly with uv (make sure the src/ directory is on PYTHONPATH)
 $ PYTHONPATH=src uv run python -m getart.cli <apple-music-url>
 
+# Print URLs without opening browser/player
+$ PYTHONPATH=src uv run python -m getart.cli --print-only <apple-music-url>
+
 # Optional: install a console script into uv's tool cache
 $ uv tool install --from . getart
 $ getart <apple-music-url>
@@ -28,7 +31,9 @@ The command prints any discovered artwork URLs and opens them in your default br
 ## Development
 
 - Format / lint: handled by your editor or additional tools of choice.
-- Tests: `mise test` (runs `uv run pytest`)
+- Unit tests: `mise run test-unit`
+- Live integration tests: `mise run test-integration` (hits real Apple Music URLs)
+- Full suite (unit + integration): `mise run test`
 - Build distributions: `mise build` (runs `uv build`)
 - Cleanup: `mise clean`
 

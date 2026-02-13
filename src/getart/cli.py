@@ -20,6 +20,11 @@ def build_parser() -> argparse.ArgumentParser:
         description="Fetch high-quality Apple Music artwork and motion assets."
     )
     parser.add_argument("url", help="Apple Music URL to inspect.")
+    parser.add_argument(
+        "--print-only",
+        action="store_true",
+        help="Print discovered URLs without opening them in a browser.",
+    )
     return parser
 
 
@@ -48,7 +53,11 @@ def _open_asset(asset_url: str) -> None:
 
 def main(argv: Sequence[str] | None = None) -> int:
     parser = build_parser()
-    args = parser.parse_args(argv)
+    args_list = list(argv) if argv is not None else sys.argv[1:]
+    if not args_list:
+        parser.print_help()
+        return 0
+    args = parser.parse_args(args_list)
 
     try:
         validate_url(args.url)
@@ -74,7 +83,8 @@ def main(argv: Sequence[str] | None = None) -> int:
 
     for label, asset_url in output.items():
         print(f"{label} URL: {asset_url}")
-        _open_asset(asset_url)
+        if not args.print_only:
+            _open_asset(asset_url)
 
     return 0
 

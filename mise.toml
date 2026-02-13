@@ -39,8 +39,7 @@ run = ["mise upgrade", "uv sync --upgrade"]
 
 [tasks.run]
 alias = ["getart", "r"]
-usage = 'arg "<url>" help="The Apple Music URL to get the artwork for"'
-run = "uv run python -m getart.cli '{{ usage.url }}'"
+run = "uv run python -m getart.cli"
 
 [tasks.build]
 alias = "b"
@@ -48,7 +47,15 @@ run = "uv build"
 
 [tasks.test]
 alias = "t"
-run = "uv run pytest --verbose"
+run = "uv run pytest --verbose tests/unit tests/integration"
+
+[tasks.test-unit]
+alias = ["tu", "ut"]
+run = "uv run pytest --verbose tests/unit"
+
+[tasks.test-integration]
+alias = ["ti", "it"]
+run = "uv run pytest --verbose tests/integration"
 
 [tasks.check]
 alias = "lint"
