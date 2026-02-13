@@ -1,21 +1,30 @@
-[
-	{
-		"data": {
-			"sections": [
-				{
-					"items": [
-						{
-							"videoArtwork": {
-								"dictionary": {
-									"motionDetailSquare": {
-										"video": "https://mvod.itunes.apple.com/itunes-assets/HLSVideo221/v4/41/85/ad/4185ad71-e897-fe37-6193-a7dc7abb13f0/P837475808_default.m3u8"
+{
+	"data": [
+		{
+			"data": {
+				"sections": [
+					{
+						"items": [
+							{
+								"artwork": {
+									"dictionary": {
+										"width": 4000,
+										"height": 4000,
+										"url": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/17/cb/e5/17cbe588-a6c3-d5eb-94d8-ed1aa53e1d5e/196871846042.jpg/{w}x{h}bb.{f}"
+									}
+								},
+								"videoArtwork": {
+									"dictionary": {
+										"motionDetailSquare": {
+											"video": "https://mvod.itunes.apple.com/itunes-assets/HLSVideo221/v4/41/85/ad/4185ad71-e897-fe37-6193-a7dc7abb13f0/P837475808_default.m3u8"
+										}
 									}
 								}
 							}
-						}
-					]
-				}
-			]
+						]
+					}
+				]
+			}
 		}
-	}
-]
+	]
+}

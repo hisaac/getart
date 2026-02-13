@@ -6,7 +6,7 @@ import httpx
 
 from getart.core import ArtworkAssets, fetch_artwork_assets
 
-FIXTURES = Path(__file__).parent / "data"
+FIXTURES = Path(__file__).parents[1] / "data"
 
 
 def load_fixture(name: str) -> str:
@@ -14,15 +14,11 @@ def load_fixture(name: str) -> str:
 
 
 def test_fetch_artwork_assets_with_video() -> None:
-    page_url = "https://music.apple.com/album/example-album"
-    json_payload = load_fixture("test-json-with-video.json")
+    page_url = "https://music.apple.com/album/example"
+    json_payload = load_fixture("test-json-with-video-only-used-data.json")
     html = f"<html><body><div id='serialized-server-data'>{json_payload}</div></body></html>"
 
-    master_manifest = """#EXTM3U
-#EXT-X-STREAM-INF:BANDWIDTH=1000000
-P837475808_variant.m3u8
-"""
-    variant_manifest = """#EXTM3U
+    manifest = """#EXTM3U
 #EXT-X-MAP:URI="P837475808_Anull_video_gr698_sdr_2160x2160-.mp4"
 """
 
@@ -34,15 +30,7 @@ P837475808_variant.m3u8
         ):
             return httpx.Response(
                 200,
-                text=master_manifest,
-                headers={"Content-Type": "application/vnd.apple.mpegurl"},
-            )
-        if request.url.host == "mvod.itunes.apple.com" and request.url.path.endswith(
-            "variant.m3u8"
-        ):
-            return httpx.Response(
-                200,
-                text=variant_manifest,
+                text=manifest,
                 headers={"Content-Type": "application/vnd.apple.mpegurl"},
             )
         raise AssertionError(f"Unhandled request: {request.url}")
@@ -62,8 +50,8 @@ P837475808_variant.m3u8
 
 
 def test_fetch_artwork_assets_without_video() -> None:
-    page_url = "https://music.apple.com/album/example-without-video"
-    json_payload = load_fixture("test-json-no-video.json")
+    page_url = "https://music.apple.com/album/example"
+    json_payload = load_fixture("test-json-no-video-only-used-data.json")
     html = f"<html><body><div id='serialized-server-data'>{json_payload}</div></body></html>"
 
     def handler(request: httpx.Request) -> httpx.Response:  # type: ignore[override]

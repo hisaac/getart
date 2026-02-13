@@ -21,3 +21,8 @@ dev = [
 
 [tool.uv]
 package = true
+
+[tool.pytest.ini_options]
+markers = [
+  "integration: tests that call live Apple Music URLs",
+]
