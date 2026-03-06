@@ -35,7 +35,7 @@ run = ["hk install --mise", { task = "update-hk-import" }, "uv sync"]
 
 [tasks.update]
 alias = ["upgrade", "upd", "upg"]
-run = ["mise upgrade", "uv sync --upgrade"]
+run = ["mise upgrade", "mise exec -- uv sync --upgrade"]
 
 [tasks.run]
 alias = ["getart", "r"]
