@@ -61,11 +61,11 @@ run = "uv build"
 alias = "t"
 run = "uv run pytest --verbose tests/unit tests/integration"
 
-[tasks.test-unit]
+[tasks."test:unit"]
 alias = ["tu", "ut"]
 run = "uv run pytest --verbose tests/unit"
 
-[tasks.test-integration]
+[tasks."test:integration"]
 alias = ["ti", "it"]
 run = "uv run pytest --verbose tests/integration"
 
