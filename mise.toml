@@ -70,11 +70,11 @@ alias = ["ti", "it"]
 run = "uv run pytest --verbose tests/integration"
 
 [tasks.check]
-alias = "lint"
+alias = ["lint", "chk"]
 run = "hk check --all"
 
 [tasks.fix]
-alias = ["fmt", "format"]
+alias = ["format"]
 run = "hk fix --all"
 
 [tasks.clean]
