@@ -4,7 +4,6 @@ from pathlib import Path
 
 from getart.core import ServerData
 
-
 FIXTURES = Path(__file__).parents[1] / "data"
 
 

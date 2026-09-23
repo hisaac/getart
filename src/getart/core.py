@@ -2,14 +2,14 @@ from __future__ import annotations
 
 import json
 import re
+from collections.abc import Iterable
 from dataclasses import dataclass
-from typing import Any, Iterable, Optional
+from typing import Any, Self
 from urllib.parse import urljoin
 
 import httpx
-from httpx import BaseTransport, HTTPError
 from bs4 import BeautifulSoup
-
+from httpx import BaseTransport, HTTPError
 
 DEFAULT_HEADERS = {
     "User-Agent": (
@@ -33,8 +33,8 @@ class ServerDataNotFoundError(GetArtError):
 
 @dataclass
 class ArtworkAssets:
-    image_url: Optional[str] = None
-    video_url: Optional[str] = None
+    image_url: str | None = None
+    video_url: str | None = None
 
 
 @dataclass
@@ -42,7 +42,7 @@ class ServerData:
     json_object: Any
 
     @classmethod
-    def from_json(cls, json_text: str) -> "ServerData":
+    def from_json(cls, json_text: str) -> ServerData:
         return cls(json.loads(json_text))
 
     def _iter_data_roots(self) -> Iterable[dict[str, Any]]:
@@ -67,7 +67,7 @@ class ServerData:
                 if isinstance(section, dict):
                     yield section
 
-    def image_artwork_url(self) -> Optional[str]:
+    def image_artwork_url(self) -> str | None:
         for section in self._iter_sections():
             items = section.get("items")
             if not isinstance(items, list):
@@ -95,7 +95,7 @@ class ServerData:
                 )
         return None
 
-    def video_playlist_url(self) -> Optional[str]:
+    def video_playlist_url(self) -> str | None:
         for section in self._iter_sections():
             items = section.get("items")
             if not isinstance(items, list):
@@ -134,7 +134,7 @@ class AppleMusicClient:
     def close(self) -> None:
         self._client.close()
 
-    def __enter__(self) -> "AppleMusicClient":
+    def __enter__(self) -> Self:
         return self
 
     def __exit__(self, exc_type, exc, tb) -> None:
@@ -160,7 +160,7 @@ class AppleMusicClient:
             )
         return ServerData.from_json(json_text)
 
-    def resolve_video_url(self, playlist_url: str) -> Optional[str]:
+    def resolve_video_url(self, playlist_url: str) -> str | None:
         visited: set[str] = set()
         queue: list[str] = [playlist_url]
         while queue:
@@ -196,7 +196,7 @@ def fetch_artwork_assets(
         return ArtworkAssets(image_url=image_url, video_url=video_url)
 
 
-def _extract_mp4_url(manifest: str, base_url: str) -> Optional[str]:
+def _extract_mp4_url(manifest: str, base_url: str) -> str | None:
     url_match = re.search(r"https?://[^\s\"']+\.mp4", manifest)
     if url_match:
         return url_match.group(0)

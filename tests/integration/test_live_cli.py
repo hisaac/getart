@@ -7,7 +7,6 @@ from pathlib import Path
 
 import pytest
 
-
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 URL_WITH_VIDEO = "https://music.apple.com/us/album/the-border/1734857782"
 URL_WITHOUT_VIDEO = "https://music.apple.com/us/album/lapse/1736201082"
