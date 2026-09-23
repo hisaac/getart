@@ -3,8 +3,8 @@ from __future__ import annotations
 import argparse
 import sys
 import webbrowser
+from collections.abc import Sequence
 from dataclasses import asdict
-from typing import Sequence
 from urllib.parse import urlparse
 
 from .core import (
@@ -72,7 +72,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     except GetArtError as exc:
         print(str(exc), file=sys.stderr)
         return 2
-    except Exception as exc:  # pragma: no cover - defensive fallback
+    # Keep unexpected failures at the CLI boundary on the documented exit code.
+    except Exception as exc:  # noqa: BLE001  # pragma: no cover
         print(f"Unexpected error: {exc}", file=sys.stderr)
         return 2
 
