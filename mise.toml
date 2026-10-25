@@ -9,7 +9,7 @@ uv_venv_auto = "create|source"
 actionlint = "latest"
 hk = "latest"
 pkl = "latest"
-python = { version = "latest", uv = true }
+python = "latest"
 ruff = "latest"
 shellcheck = "latest"
 tombi = "latest"
